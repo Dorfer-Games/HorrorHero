@@ -1,18 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Kuhpik;
 using UnityEngine;
 
-public class LevelLoadingSystem : MonoBehaviour
+public class LevelLoadingSystem : GameSystem, IIniting
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private string levelsPath;
+    [SerializeField] private int maxLevels;
+    void IIniting.OnInit()
     {
+         /*var levelGo = Resources.Load<GameObject>(string.Format(levelsPath, level + 1));
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Vibration.Init();
+        game.level = Instantiate(levelGo);*/
     }
 }
