@@ -8,22 +8,35 @@ using UnityEngine.Serialization;
 public class LevelMoveSystem : GameSystem, IIniting, IUpdating
 {
     [SerializeField] private NavMeshAgent victimNavMeshAgent;
-    [SerializeField] private NavMeshAgent murderMeshAgent;
+    [SerializeField] private Rigidbody murderMeshAgent;
     [SerializeField] private GameObject finish;
+    [SerializeField] private float time;
+
+    private float startTime;
 
     private Vector3 distance;
     
     void IIniting.OnInit()
     {
+        startTime = time;
         finish = GameObject.FindWithTag("EndLevel");
+        victimNavMeshAgent.ActivateCurrentOffMeshLink(true);
         victimNavMeshAgent.SetDestination(finish.transform.position);
-        murderMeshAgent.SetDestination(victimNavMeshAgent.transform.position);
-       murderMeshAgent.speed = victimNavMeshAgent.speed;
     }
 
     void IUpdating.OnUpdate()
     {
-       murderMeshAgent.destination = victimNavMeshAgent.transform.position;
-       murderMeshAgent.speed = victimNavMeshAgent.speed;
+        MoveMurder();
+        if (time > 0)
+        {
+            time -= 0.1f;
+        }
+    }
+
+    private void MoveMurder()
+    {
+        Vector3 pos = murderMeshAgent.transform.position;
+        pos.z = victimNavMeshAgent.transform.position.z - 3;
+        murderMeshAgent.position = pos;
     }
 }
