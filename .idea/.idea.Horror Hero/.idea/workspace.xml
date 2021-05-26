@@ -2,15 +2,173 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc4f9fc-f7f3-40c6-b50f-64abc3b1b0e6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror Hero/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror Hero/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror Hero/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror Hero/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example01 - Basics.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example01 - Basics.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example01 - Basics.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example01 - Basics/Level.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example01 - Basics/Level.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example01 - Basics/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example01 - Basics/Materials/Ground.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example01 - Basics/Materials/Ground.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example01 - Basics/Materials/Player.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example01 - Basics/Materials/Player.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example01 - Basics/Materials/Walls.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example01 - Basics/Materials/Walls.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example02 - Obstacles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example02 - Obstacles.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example02 - Obstacles.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example02 - Obstacles/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example02 - Obstacles/Materials/Ground.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example02 - Obstacles/Materials/Ground.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example02 - Obstacles/Materials/Obstacle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example02 - Obstacles/Materials/Obstacle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example02 - Obstacles/Materials/Player.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example02 - Obstacles/Materials/Player.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example02 - Obstacles/ObstacleAnimation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example02 - Obstacles/ObstacleAnimation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example03 - Runtime.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example03 - Runtime.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example03 - Runtime.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example03 - Runtime/LevelGenerator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example03 - Runtime/LevelGenerator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example03 - Runtime/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example03 - Runtime/Materials/Ground.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example03 - Runtime/Materials/Ground.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example03 - Runtime/Materials/Player.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example03 - Runtime/Materials/Player.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example03 - Runtime/Materials/Walls.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example03 - Runtime/Materials/Walls.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example03 - Runtime/Player.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example03 - Runtime/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example03 - Runtime/Wall.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example03 - Runtime/Wall.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example04 - Links.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example04 - Links.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example04 - Links.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example04 - Links/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example04 - Links/Materials/Ground01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example04 - Links/Materials/Ground01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example04 - Links/Materials/Ground02.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example04 - Links/Materials/Ground02.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example04 - Links/Materials/Player.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example04 - Links/Materials/Player.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_Crouch.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_Crouch.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_Dying.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_Dying.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_Idle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_Idle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_IdleJumpUp.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_IdleJumpUp.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_IdleWin.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_IdleWin.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_JumpAndFall.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_JumpAndFall.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_MidAir.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_MidAir.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_Run.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_Run.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_RunTurn.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_RunTurn.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_RunTurnSharp.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_RunTurnSharp.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_StandTurn.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_StandTurn.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_Walk.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_Walk.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_WalkTurn.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_WalkTurn.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_WalkTurnSharp.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Clips/Humanoid_WalkTurnSharp.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Humanoid.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Animation/Humanoid.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Materials/LowBody.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Materials/LowBody.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Models/LowBody.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Models/LowBody.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Scripts/ThirdPersonCharacter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/LowMan/Scripts/ThirdPersonCharacter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/Materials/Ground.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/Materials/Ground.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/Materials/Walls.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/Example05 - LowMan/Materials/Walls.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/NavMeshComponents.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/NavMeshComponents/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/NavMeshComponents/Editor/NavMeshLinkEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/NavMeshComponents/Editor/NavMeshLinkEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/NavMeshComponents/Editor/NavMeshModifierEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/NavMeshComponents/Editor/NavMeshModifierEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/NavMeshComponents/Editor/NavMeshModifierVolumeEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/NavMeshComponents/Editor/NavMeshModifierVolumeEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/NavMeshComponents/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/NavMeshComponents/Scripts/NavMeshLink.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/NavMeshComponents/Scripts/NavMeshLink.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/NavMeshComponents/Scripts/NavMeshModifier.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/NavMeshComponents/Scripts/NavMeshModifier.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/NavMeshComponents/Scripts/NavMeshModifierVolume.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/NavMeshComponents/Scripts/NavMeshModifierVolume.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/NavMeshComponents/Scripts/NavMeshSurface.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/Assets/NavMeshComponents/Scripts/NavMeshSurface.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/AudioManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/AudioManager.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/ClusterInputManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/ClusterInputManager.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/DynamicsManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/DynamicsManager.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/EditorBuildSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/EditorSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/EditorSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/GraphicsSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/GraphicsSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/InputManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/InputManager.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/NavMeshAreas.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/NavMeshAreas.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/NetworkManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/NetworkManager.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/Physics2DSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/Physics2DSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/ProjectSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/ProjectSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/ProjectVersion.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/ProjectVersion.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/QualitySettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/QualitySettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/TagManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/TagManager.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/TimeManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/TimeManager.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/NavMesh Example Project/ProjectSettings/UnityConnectSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Tutorial-master/NavMesh-Tutorial-master/README.md.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh-Level1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh-Level1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Prefabs/TownBlock1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Prefabs/TownBlock1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Components/Murder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Scripts/Components/Murder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Components/Victim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Scripts/Components/Victim.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/GameState/LevelMoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Scripts/GameState/LevelMoveSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,12 +198,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="1638" />
+          <entry key="cs" value="2450" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="1638" />
+          <entry key="C#" value="2450" />
         </counts>
       </usages-collector>
     </session>
@@ -81,29 +239,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/GameState/LevelMoveSystem.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="285">
+              <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
               <folding>
-                <marker date="1622011516741" expanded="true" signature="6:147" ph="..." />
-                <marker date="1622011516741" expanded="true" signature="211:842" ph="{...}" />
-                <marker date="1622011516741" expanded="true" signature="442:638" ph="{...}" />
-                <marker date="1622011516741" expanded="true" signature="669:840" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/Components/Victim.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-              <folding>
-                <marker date="1622021295251" expanded="false" signature="6:100" ph="..." />
-                <marker date="1622021295251" expanded="true" signature="137:146" ph="{...}" />
+                <marker date="1622023894499" expanded="true" signature="6:166" ph="..." />
+                <marker date="1622023894499" expanded="true" signature="230:2394" ph="{...}" />
+                <marker date="1622023894499" expanded="true" signature="679:1011" ph="{...}" />
+                <marker date="1622023894499" expanded="true" signature="1042:1353" ph="{...}" />
+                <marker date="1622023894499" expanded="true" signature="1125:1171" ph="{...}" />
+                <marker date="1622023894499" expanded="true" signature="1184:1347" ph="{...}" />
+                <marker date="1622023894499" expanded="true" signature="1384:1555" ph="{...}" />
+                <marker date="1622023894499" expanded="true" signature="1587:1718" ph="{...}" />
+                <marker date="1622023894499" expanded="true" signature="1751:2098" ph="{...}" />
+                <marker date="1622023894499" expanded="true" signature="2133:2253" ph="{...}" />
+                <marker date="1622023894499" expanded="true" signature="2277:2392" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -126,16 +278,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/Components/Murder.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+            <state relative-caret-position="527">
+              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding>
-                <marker date="1622021295341" expanded="true" signature="6:92" ph="..." />
-                <marker date="1622021295341" expanded="true" signature="129:759" ph="{...}" />
-                <marker date="1622021295341" expanded="true" signature="235:333" ph="{...}" />
-                <marker date="1622021295341" expanded="true" signature="385:596" ph="{...}" />
-                <marker date="1622021295341" expanded="true" signature="489:590" ph="{...}" />
-                <marker date="1622021295341" expanded="true" signature="647:686" ph="{...}" />
-                <marker date="1622021295341" expanded="true" signature="719:757" ph="{...}" />
+                <marker date="1622023543915" expanded="true" signature="6:92" ph="..." />
+                <marker date="1622023543915" expanded="true" signature="129:802" ph="{...}" />
+                <marker date="1622023543915" expanded="true" signature="235:333" ph="{...}" />
+                <marker date="1622023543915" expanded="true" signature="385:639" ph="{...}" />
+                <marker date="1622023543915" expanded="true" signature="532:633" ph="{...}" />
+                <marker date="1622023543915" expanded="true" signature="690:729" ph="{...}" />
+                <marker date="1622023543915" expanded="true" signature="762:800" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -196,7 +348,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Source/Scripts/LoadingState/LevelLoadingSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Source/Scripts/StartState/StartUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Source/Scripts/Components/Victim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Source/Scripts/Components/MainCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Bootstrap-master/Assets/Kuhpik's Bootstrap/Source/Scripts/Abstracts/GameState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Bootstrap-master/Assets/Kuhpik's Bootstrap/Source/Scripts/Commons/Enums/EGamestate.cs" root0="FORCE_HIGHLIGHTING" />
@@ -211,9 +362,9 @@
         <option value="$PROJECT_DIR$/Assets/Source/Scripts/LoadingState/LevelLoadingSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Source/Scripts/StartState/StartUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Source/Scripts/Components/MainCamera.cs" />
-        <option value="$PROJECT_DIR$/Assets/Source/Scripts/GameState/LevelMoveSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Source/Scripts/Components/Murder.cs" />
         <option value="$PROJECT_DIR$/Assets/Source/Scripts/Components/Victim.cs" />
+        <option value="$PROJECT_DIR$/Assets/Source/Scripts/Components/Murder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Source/Scripts/GameState/LevelMoveSystem.cs" />
       </list>
     </option>
   </component>
@@ -394,12 +545,12 @@
       <option name="presentableId" value="Default" />
       <updated>1621958087964</updated>
       <workItem from="1621958097426" duration="1271000" />
-      <workItem from="1621962569558" duration="15607000" />
+      <workItem from="1621962569558" duration="18783000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16878000" />
+    <option name="totallyTimeSpent" value="20054000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -525,6 +676,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/Components/Victim.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/Components/MainCamera.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -537,42 +695,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/GameState/LevelMoveSystem.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <marker date="1622011516741" expanded="true" signature="6:147" ph="..." />
-            <marker date="1622011516741" expanded="true" signature="211:842" ph="{...}" />
-            <marker date="1622011516741" expanded="true" signature="442:638" ph="{...}" />
-            <marker date="1622011516741" expanded="true" signature="669:840" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/Components/Murder.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        <state relative-caret-position="527">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding>
-            <marker date="1622021295341" expanded="true" signature="6:92" ph="..." />
-            <marker date="1622021295341" expanded="true" signature="129:759" ph="{...}" />
-            <marker date="1622021295341" expanded="true" signature="235:333" ph="{...}" />
-            <marker date="1622021295341" expanded="true" signature="385:596" ph="{...}" />
-            <marker date="1622021295341" expanded="true" signature="489:590" ph="{...}" />
-            <marker date="1622021295341" expanded="true" signature="647:686" ph="{...}" />
-            <marker date="1622021295341" expanded="true" signature="719:757" ph="{...}" />
+            <marker date="1622023543915" expanded="true" signature="6:92" ph="..." />
+            <marker date="1622023543915" expanded="true" signature="129:802" ph="{...}" />
+            <marker date="1622023543915" expanded="true" signature="235:333" ph="{...}" />
+            <marker date="1622023543915" expanded="true" signature="385:639" ph="{...}" />
+            <marker date="1622023543915" expanded="true" signature="532:633" ph="{...}" />
+            <marker date="1622023543915" expanded="true" signature="690:729" ph="{...}" />
+            <marker date="1622023543915" expanded="true" signature="762:800" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/Components/Victim.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/GameState/LevelMoveSystem.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        <state relative-caret-position="285">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
           <folding>
-            <marker date="1622021295251" expanded="false" signature="6:100" ph="..." />
-            <marker date="1622021295251" expanded="true" signature="137:146" ph="{...}" />
+            <marker date="1622023894499" expanded="true" signature="6:166" ph="..." />
+            <marker date="1622023894499" expanded="true" signature="230:2394" ph="{...}" />
+            <marker date="1622023894499" expanded="true" signature="679:1011" ph="{...}" />
+            <marker date="1622023894499" expanded="true" signature="1042:1353" ph="{...}" />
+            <marker date="1622023894499" expanded="true" signature="1125:1171" ph="{...}" />
+            <marker date="1622023894499" expanded="true" signature="1184:1347" ph="{...}" />
+            <marker date="1622023894499" expanded="true" signature="1384:1555" ph="{...}" />
+            <marker date="1622023894499" expanded="true" signature="1587:1718" ph="{...}" />
+            <marker date="1622023894499" expanded="true" signature="1751:2098" ph="{...}" />
+            <marker date="1622023894499" expanded="true" signature="2133:2253" ph="{...}" />
+            <marker date="1622023894499" expanded="true" signature="2277:2392" ph="{...}" />
           </folding>
         </state>
       </provider>

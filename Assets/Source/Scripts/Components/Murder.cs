@@ -19,7 +19,7 @@ public class Murder : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         //gameStartAction?.Invoke(true);
-        if (!colisionTpuched.Contains(other.gameObject))
+        if (!colisionTpuched.Contains(other.gameObject) && !other.gameObject.tag.Contains("Floor"))
         {
             colission = true;
             colisionTpuched.Add(other.gameObject);
