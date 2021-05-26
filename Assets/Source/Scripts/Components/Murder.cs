@@ -12,23 +12,32 @@ public class Murder : MonoBehaviour
     private void Start()
     {
         colission = false;
-        colisionTpuched = new List<GameObject>();
         
     }
 
     private void OnCollisionEnter(Collision other)
     {
         //gameStartAction?.Invoke(true);
-        if (!colisionTpuched.Contains(other.gameObject) && !other.gameObject.tag.Contains("Floor"))
+        if (!other.gameObject.tag.Contains("Floor"))
         {
             colission = true;
-            colisionTpuched.Add(other.gameObject);
         }
     }
 
     private void OnCollisionExit(Collision other)
     {
-        colission = false;
+        if (!other.gameObject.tag.Contains("Floor"))
+        {
+            colission = false;
+        }
+    }
+
+    private void OnCollisionStay(Collision other)
+    {
+        if (!other.gameObject.tag.Contains("Floor"))
+        {
+            colission = false;
+        }
     }
 
     public bool colissionBool()

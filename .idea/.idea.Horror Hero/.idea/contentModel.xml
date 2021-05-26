@@ -240,6 +240,45 @@
             </e>
           </e>
         </e>
+        <e p="NavMesh-Tutorial-master" t="Include">
+          <e p="NavMesh-Tutorial-master" t="Include">
+            <e p="NavMesh Example Project" t="Include">
+              <e p="Assets" t="Include">
+                <e p="Example02 - Obstacles" t="Include">
+                  <e p="ObstacleAnimation.cs" t="Include" />
+                </e>
+                <e p="Example03 - Runtime" t="Include">
+                  <e p="LevelGenerator.cs" t="Include" />
+                </e>
+                <e p="Example05 - LowMan" t="Include">
+                  <e p="LowMan" t="Include">
+                    <e p="Scripts" t="Include">
+                      <e p="ThirdPersonCharacter.cs" t="Include" />
+                    </e>
+                  </e>
+                </e>
+                <e p="NavMeshComponents" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="NavMeshComponentsGUIUtility.cs" t="Include" />
+                    <e p="NavMeshLinkEditor.cs" t="Include" />
+                    <e p="NavMeshModifierEditor.cs" t="Include" />
+                    <e p="NavMeshModifierVolumeEditor.cs" t="Include" />
+                    <e p="NavMeshSurfaceEditor.cs" t="Include" />
+                  </e>
+                  <e p="Scripts" t="Include">
+                    <e p="NavMeshLink.cs" t="Include" />
+                    <e p="NavMeshModifier.cs" t="Include" />
+                    <e p="NavMeshModifierVolume.cs" t="Include" />
+                    <e p="NavMeshSurface.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="ProjectSettings" t="Include">
+                <e p="ProjectVersion.txt" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Plugins" t="Include">
           <e p="Demigiant" t="Include">
             <e p="DOTween" t="Include">
@@ -261,45 +300,6 @@
             <e p="Components" t="Include">
               <e p="MainCamera.cs" t="Include" />
               <e p="Murder.cs" t="Include" />
-              <e p="NavMesh-Tutorial-master" t="Include">
-                <e p="NavMesh-Tutorial-master" t="Include">
-                  <e p="NavMesh Example Project" t="Include">
-                    <e p="Assets" t="Include">
-                      <e p="Example02 - Obstacles" t="Include">
-                        <e p="ObstacleAnimation.cs" t="Include" />
-                      </e>
-                      <e p="Example03 - Runtime" t="Include">
-                        <e p="LevelGenerator.cs" t="Include" />
-                      </e>
-                      <e p="Example05 - LowMan" t="Include">
-                        <e p="LowMan" t="Include">
-                          <e p="Scripts" t="Include">
-                            <e p="ThirdPersonCharacter.cs" t="Include" />
-                          </e>
-                        </e>
-                      </e>
-                      <e p="NavMeshComponents" t="Include">
-                        <e p="Editor" t="Include">
-                          <e p="NavMeshComponentsGUIUtility.cs" t="Include" />
-                          <e p="NavMeshLinkEditor.cs" t="Include" />
-                          <e p="NavMeshModifierEditor.cs" t="Include" />
-                          <e p="NavMeshModifierVolumeEditor.cs" t="Include" />
-                          <e p="NavMeshSurfaceEditor.cs" t="Include" />
-                        </e>
-                        <e p="Scripts" t="Include">
-                          <e p="NavMeshLink.cs" t="Include" />
-                          <e p="NavMeshModifier.cs" t="Include" />
-                          <e p="NavMeshModifierVolume.cs" t="Include" />
-                          <e p="NavMeshSurface.cs" t="Include" />
-                        </e>
-                      </e>
-                    </e>
-                    <e p="ProjectSettings" t="Include">
-                      <e p="ProjectVersion.txt" t="Include" />
-                    </e>
-                  </e>
-                </e>
-              </e>
             </e>
             <e p="GameState" t="Include">
               <e p="LevelMoveSystem.cs" t="Include" />

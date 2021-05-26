@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Serialization;
 
-public class LevelMoveSystem : GameSystem, IIniting, IUpdating
+public class LevelMoveSystem : GameSystem, IIniting
 {
     [SerializeField] private NavMeshAgent victimNavMeshAgent;
     [SerializeField] private Rigidbody murderMeshAgent;
@@ -17,7 +17,6 @@ public class LevelMoveSystem : GameSystem, IIniting, IUpdating
 
     private float startTime;
     private Murder murderScript;
-    private float previeSpeed;
 
     private Transform victim;
 
@@ -33,19 +32,21 @@ public class LevelMoveSystem : GameSystem, IIniting, IUpdating
         victimNavMeshAgent.SetDestination(finish.transform.position);
     }
 
-    void IUpdating.OnUpdate()
+    void FixedUpdate()
     {
-        MoveMurder();
-        if (time > 0 && !murderScript.colissionBool())
+        if (Bootstrap.GetCurrentGamestate() == EGamestate.Game)
         {
-            time -= 0.1f;
-        }
-        else
-        {
-            time = 0;
-            previeSpeed = victimNavMeshAgent.speed;
-            victimNavMeshAgent.speed = 0;
-            SeeBackward();
+            MoveMurder();
+            if (time > 0 && !murderScript.colissionBool())
+            {
+                time -= 0.1f;
+            }
+            else
+            {
+                victimNavMeshAgent.isStopped = true;
+                victimNavMeshAgent.enabled = false;
+                SeeBackward();
+            }
         }
     }
 
@@ -53,7 +54,7 @@ public class LevelMoveSystem : GameSystem, IIniting, IUpdating
     {
         Vector3 pos = murderMeshAgent.transform.position;
         pos.z = victimNavMeshAgent.transform.position.z - 3;
-        murderMeshAgent.position = pos;
+        murderMeshAgent.MovePosition(pos);
     }
 
     private void SeeBackward()
@@ -68,8 +69,8 @@ public class LevelMoveSystem : GameSystem, IIniting, IUpdating
         eyePos.x = 0.05f;
         eyes[0].localPosition = eyePos;
         eyes[1].localPosition = eyePos;
-        eyes[0].DOLocalMoveX(-0.05f, 0.5f).SetEase(Ease.Linear).SetLoops(3);
-        eyes[1].DOLocalMoveX(-0.05f, 0.5f).SetEase(Ease.Linear).SetLoops(3).OnComplete(ReturnRptation);
+        eyes[0].DOLocalMoveX(-0.05f, 0.5f).SetEase(Ease.Linear).SetLoops(3, LoopType.Yoyo);
+        eyes[1].DOLocalMoveX(-0.05f, 0.5f).SetEase(Ease.Linear).SetLoops(3, LoopType.Yoyo).OnComplete(ReturnRptation);
     }
 
     private void ReturnRptation()
@@ -80,8 +81,10 @@ public class LevelMoveSystem : GameSystem, IIniting, IUpdating
 
     private void Run()
     {
-        previeSpeed += 0.5f;
-        victimNavMeshAgent.speed = previeSpeed;
+        victimNavMeshAgent.speed += 0.5f;
+        victimNavMeshAgent.enabled = true;
+        victimNavMeshAgent.isStopped = false;
         time = startTime;
+        victimNavMeshAgent.SetDestination(finish.transform.position);
     }
 }
