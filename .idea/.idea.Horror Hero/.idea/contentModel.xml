@@ -299,10 +299,12 @@
           <e p="Scripts" t="Include">
             <e p="Components" t="Include">
               <e p="MainCamera.cs" t="Include" />
-              <e p="Murder.cs" t="Include" />
             </e>
             <e p="GameState" t="Include">
+              <e p="InputSystem.cs" t="Include" />
               <e p="LevelMoveSystem.cs" t="Include" />
+              <e p="Murder.cs" t="Include" />
+              <e p="MurderController.cs" t="Include" />
             </e>
             <e p="LoadingState" t="Include">
               <e p="LevelLoadingSystem.cs" t="Include" />

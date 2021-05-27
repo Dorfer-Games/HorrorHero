@@ -36,16 +36,19 @@ public class LevelMoveSystem : GameSystem, IIniting
     {
         if (Bootstrap.GetCurrentGamestate() == EGamestate.Game)
         {
-            MoveMurder();
+           
             if (time > 0 && !murderScript.colissionBool())
             {
                 time -= 0.1f;
+                MoveMurder();
             }
             else
             {
-                victimNavMeshAgent.isStopped = true;
-                victimNavMeshAgent.enabled = false;
-                SeeBackward();
+                if (victimNavMeshAgent.enabled)
+                {
+                    victimNavMeshAgent.enabled = false;
+                    SeeBackward();
+                }
             }
         }
     }
@@ -81,9 +84,8 @@ public class LevelMoveSystem : GameSystem, IIniting
 
     private void Run()
     {
-        victimNavMeshAgent.speed += 0.5f;
+        victimNavMeshAgent.speed += 1;
         victimNavMeshAgent.enabled = true;
-        victimNavMeshAgent.isStopped = false;
         time = startTime;
         victimNavMeshAgent.SetDestination(finish.transform.position);
     }

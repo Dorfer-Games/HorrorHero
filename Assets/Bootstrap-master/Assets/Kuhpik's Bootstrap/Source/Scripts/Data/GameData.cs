@@ -10,5 +10,7 @@ namespace Kuhpik
         // Example (I use public fields for data, but u free to use properties\methods etc)
         // public float LevelProgress;
         // public Enemy[] Enemies;
+
+        public bool masking;
     }
 }
