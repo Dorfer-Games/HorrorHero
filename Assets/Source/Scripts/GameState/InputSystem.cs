@@ -1,18 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Kuhpik;
 using UnityEngine;
 
-public class InputSystem : MonoBehaviour
+public class InputSystem : GameSystem, IUpdating
 {
-    // Start is called before the first frame update
-    void Start()
+    void IUpdating.OnUpdate()
     {
-        
-    }
+        if (Input.GetMouseButtonDown(0))
+        {
+            /*отправляем RAY луч по X*/
+            /*двигаем персонажа по Х*/
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (Input.GetMouseButtonUp(0))
+        {
+            /*маскируемся*/
+        }
     }
 }
