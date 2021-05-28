@@ -25,7 +25,7 @@ public class VictimController : GameSystem, IIniting
     {
         game.fear = false;
         startTime = time;
-        victimNavMeshAgent = game.victim.GetComponent<NavMeshAgent>();
+        victimNavMeshAgent = game.victimGhost.GetComponent<NavMeshAgent>();
         victim = game.victim.transform;
         murderScript = game.murder.GetComponent<Murder>();
         victimNavMeshAgent.ActivateCurrentOffMeshLink(true);
@@ -40,6 +40,7 @@ public class VictimController : GameSystem, IIniting
             if (time > 0 && !murderScript.colissionBool())
             {
                 time -= 0.1f;
+                victim.transform.position = victimNavMeshAgent.transform.position;
             }
             else
             {

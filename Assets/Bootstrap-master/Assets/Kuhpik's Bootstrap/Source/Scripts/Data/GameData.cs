@@ -17,6 +17,7 @@ namespace Kuhpik
         public bool fear;
 
         public GameObject victim;
+        public GameObject victimGhost;
         public GameObject murder;
         public Scrollbar fearBar;
         public GameObject finish;

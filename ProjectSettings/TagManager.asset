@@ -9,6 +9,7 @@ TagManager:
   - Victim
   - Murder
   - Fear
+  - VictimGhost
   layers:
   - Default
   - TransparentFX

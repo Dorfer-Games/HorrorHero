@@ -17,6 +17,7 @@ public class LevelLoadingSystem : GameSystem, IIniting
         
         game.victim = GameObject.FindWithTag("Victim");
         game.murder = GameObject.FindWithTag("Murder");
+        game.victimGhost = GameObject.FindWithTag("VictimGhost");
         game.masking = true;
         game.fearBar = GameObject.FindWithTag("Fear").GetComponent<Scrollbar>();
         game.finish = GameObject.FindWithTag("EndLevel");

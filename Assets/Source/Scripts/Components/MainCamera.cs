@@ -15,11 +15,11 @@ public class MainCamera : MonoBehaviour
     // Update is called once per frame
    void Update()
     {
-        /*Vector3 pos = transform.position;
+        Vector3 pos = transform.position;
         pos.z = murder.position.z - 7;
-        transform.position = pos;*/
-        Vector3 targetPosition = murder.TransformPoint(new Vector3(0, 6, -7));
-        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+        transform.position = pos;/**/
+        //Vector3 targetPosition = murder.TransformPoint(new Vector3(0, 6, -7));
+        //transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
         
-        }
+    }
 }
