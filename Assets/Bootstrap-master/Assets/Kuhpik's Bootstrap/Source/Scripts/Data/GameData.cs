@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Kuhpik
 {
@@ -13,8 +14,10 @@ namespace Kuhpik
 
         public bool masking;
         public bool seeBackward;
+        public bool fear;
 
         public GameObject victim;
         public GameObject murder;
+        public Scrollbar fearBar;
     }
 }

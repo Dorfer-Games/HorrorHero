@@ -13,11 +13,13 @@ public class MurderController : GameSystem, IIniting, IUpdating
     [SerializeField] private float maxX;
     private float xPosition;
     private Vector3 murderPos;
+    private Rigidbody murderRigidBody;
 
     private MeshRenderer murderMesh;
     
     void IIniting.OnInit()
     {
+        murderRigidBody = game.murder.GetComponent<Rigidbody>();
         murderMesh = game.murder.GetComponent<MeshRenderer>();
         murderPos = game.murder.transform.position;
     }
@@ -32,7 +34,7 @@ public class MurderController : GameSystem, IIniting, IUpdating
         murderPos.x = (xPosition-0.5f)*maxX/0.5f;
         murderPos.z = game.victim.transform.position.z - 3;
 
-        game.murder.transform.position = murderPos;
+        murderRigidBody.MovePosition(murderPos);
 
     }
 }

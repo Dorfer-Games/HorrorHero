@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Kuhpik;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelLoadingSystem : GameSystem, IIniting
 {
@@ -10,8 +11,9 @@ public class LevelLoadingSystem : GameSystem, IIniting
     void IIniting.OnInit()
     {
         game.victim = GameObject.FindWithTag("Victim");
-        game.murder = GameObject.FindWithTag("Murder");         
-        
+        game.murder = GameObject.FindWithTag("Murder");
+        game.masking = true;
+        game.fearBar = GameObject.FindWithTag("Fear").GetComponent<Scrollbar>();
         /*var levelGo = Resources.Load<GameObject>(string.Format(levelsPath, level + 1));
         
         Vibration.Init();
