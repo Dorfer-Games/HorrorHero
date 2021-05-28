@@ -6,6 +6,8 @@ TagManager:
   tags:
   - EndLevel
   - Floor
+  - Victim
+  - Murder
   layers:
   - Default
   - TransparentFX
