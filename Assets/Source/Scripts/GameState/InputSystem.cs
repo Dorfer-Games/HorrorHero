@@ -9,13 +9,12 @@ public class InputSystem : GameSystem, IUpdating
     {
         if (Input.GetMouseButtonDown(0))
         {
-            /*отправляем RAY луч по X*/
-            /*двигаем персонажа по Х*/
+            game.masking = true;
         }
 
         if (Input.GetMouseButtonUp(0))
         {
-            /*маскируемся*/
+            game.masking = false;
         }
     }
 }

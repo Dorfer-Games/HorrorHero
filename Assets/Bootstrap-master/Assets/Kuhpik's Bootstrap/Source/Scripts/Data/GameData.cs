@@ -12,5 +12,9 @@ namespace Kuhpik
         // public Enemy[] Enemies;
 
         public bool masking;
+        public bool seeBackward;
+
+        public GameObject victim;
+        public GameObject murder;
     }
 }
