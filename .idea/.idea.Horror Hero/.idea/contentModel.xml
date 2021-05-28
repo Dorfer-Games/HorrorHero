@@ -330,13 +330,13 @@
           <e p="Scripts" t="Include">
             <e p="Components" t="Include">
               <e p="ButtonClickRetry.cs" t="Include" />
+              <e p="Murder.cs" t="Include" />
             </e>
             <e p="GameState" t="Include">
               <e p="FearController.cs" t="Include" />
               <e p="FinishIndicateSystem.cs" t="Include" />
               <e p="InputSystem.cs" t="Include" />
               <e p="MainCamera.cs" t="Include" />
-              <e p="Murder.cs" t="Include" />
               <e p="MurderController.cs" t="Include" />
               <e p="ShadowController.cs" t="Include" />
               <e p="VictimController.cs" t="Include" />

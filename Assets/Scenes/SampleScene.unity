@@ -35422,8 +35422,12 @@ PrefabInstance:
       value: Character_FastFoodGuy_01
       objectReference: {fileID: 0}
     - target: {fileID: 130974, guid: cf0f33d2a32f159499351bdc8d15d958, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 130974, guid: cf0f33d2a32f159499351bdc8d15d958, type: 3}
       propertyPath: m_TagString
-      value: Murder
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 403934, guid: cf0f33d2a32f159499351bdc8d15d958, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -47683,13 +47687,26 @@ GameObject:
   - component: {fileID: 1127244307}
   - component: {fileID: 1127244306}
   - component: {fileID: 1127244310}
+  - component: {fileID: 1127244305}
   m_Layer: 0
   m_Name: Murder
-  m_TagString: Untagged
+  m_TagString: Murder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
+--- !u!114 &1127244305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127244304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2976ec8045c534aace3d61b404738b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &1127244306
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -56902,8 +56919,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 127660926}
   maxX: 2
-  shadow: {fileID: 0}
-  shadowMask: {fileID: 0}
 --- !u!1 &1330903456
 GameObject:
   m_ObjectHideFlags: 0
@@ -69469,8 +69484,12 @@ PrefabInstance:
       value: Character_GamerGirl_01
       objectReference: {fileID: 0}
     - target: {fileID: 191984, guid: ae8b16115c4dca4499645ab171e10144, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 191984, guid: ae8b16115c4dca4499645ab171e10144, type: 3}
       propertyPath: m_TagString
-      value: Victim
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 417210, guid: ae8b16115c4dca4499645ab171e10144, type: 3}
       propertyPath: m_RootOrder
@@ -81537,11 +81556,11 @@ GameObject:
   - component: {fileID: 1920142472}
   m_Layer: 0
   m_Name: Victim
-  m_TagString: Untagged
+  m_TagString: Victim
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!136 &1920142472
 CapsuleCollider:
   m_ObjectHideFlags: 0
