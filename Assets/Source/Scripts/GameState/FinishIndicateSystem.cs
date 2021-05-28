@@ -12,7 +12,17 @@ public class FinishIndicateSystem : GameSystem, IUpdating
     {
         if (game.seeBackward & game.masking)
         {
-            /*FAIL*/
+            Bootstrap.ChangeGameState(EGamestate.Lose);
+        }
+
+        if (game.fearBar.value >= 0.95f)
+        {
+            Bootstrap.ChangeGameState(EGamestate.Lose);
+        }
+
+        if (game.victim.transform.position.z >= game.finish.transform.position.z)
+        {
+            Bootstrap.ChangeGameState(EGamestate.Win);
         }
         
     }

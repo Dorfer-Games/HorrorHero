@@ -8,6 +8,8 @@
         Loading = 1,
         Start = 2,
         Game = 3,
+        Lose = 4,
+        Win = 5,
         Result = 10
 
         // Extend just like that

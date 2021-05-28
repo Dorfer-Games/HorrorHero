@@ -19,5 +19,6 @@ namespace Kuhpik
         public GameObject victim;
         public GameObject murder;
         public Scrollbar fearBar;
+        public GameObject finish;
     }
 }

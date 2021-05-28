@@ -298,6 +298,7 @@
         <e p="Source" t="Include">
           <e p="Scripts" t="Include">
             <e p="Components" t="Include">
+              <e p="ButtonClickRetry.cs" t="Include" />
               <e p="MainCamera.cs" t="Include" />
             </e>
             <e p="GameState" t="Include">
@@ -312,7 +313,7 @@
               <e p="LevelLoadingSystem.cs" t="Include" />
             </e>
             <e p="StartState" t="Include">
-              <e p="StartUI.cs" t="Include" />
+              <e p="PressInsication.cs" t="Include" />
             </e>
           </e>
         </e>

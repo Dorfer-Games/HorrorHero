@@ -10,13 +10,16 @@ public class LevelLoadingSystem : GameSystem, IIniting
     [SerializeField] private int maxLevels;
     void IIniting.OnInit()
     {
+        /*var levelGo = Resources.Load<GameObject>(string.Format(levelsPath, level + 1));
+       
+       Vibration.Init();
+       game.level = Instantiate(levelGo);*/
+        
         game.victim = GameObject.FindWithTag("Victim");
         game.murder = GameObject.FindWithTag("Murder");
         game.masking = true;
         game.fearBar = GameObject.FindWithTag("Fear").GetComponent<Scrollbar>();
-        /*var levelGo = Resources.Load<GameObject>(string.Format(levelsPath, level + 1));
-        
-        Vibration.Init();
-        game.level = Instantiate(levelGo);*/
+        game.finish = GameObject.FindWithTag("EndLevel");
+       
     }
 }

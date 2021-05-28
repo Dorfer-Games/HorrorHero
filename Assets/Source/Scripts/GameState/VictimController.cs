@@ -7,7 +7,6 @@ using UnityEngine.AI;
 
 public class VictimController : GameSystem, IIniting
 {
-    [SerializeField] private GameObject finish;
     [SerializeField] private float time;
     [SerializeField] private Transform znak;
 
@@ -28,9 +27,8 @@ public class VictimController : GameSystem, IIniting
         victimNavMeshAgent = game.victim.GetComponent<NavMeshAgent>();
         victim = game.victim.transform;
         murderScript = game.murder.GetComponent<Murder>();
-        finish = GameObject.FindWithTag("EndLevel");
         victimNavMeshAgent.ActivateCurrentOffMeshLink(true);
-        victimNavMeshAgent.SetDestination(finish.transform.position);
+        victimNavMeshAgent.SetDestination(game.finish.transform.position);
         znak.gameObject.SetActive(false);
     }
 
@@ -94,6 +92,6 @@ public class VictimController : GameSystem, IIniting
         victimNavMeshAgent.speed += 1;
         victimNavMeshAgent.enabled = true;
         time = startTime;
-        victimNavMeshAgent.SetDestination(finish.transform.position);
+        victimNavMeshAgent.SetDestination(game.finish.transform.position);
     }
 }
