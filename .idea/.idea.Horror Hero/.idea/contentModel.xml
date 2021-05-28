@@ -88,9 +88,6 @@
                       <e p="TypeRepository.cs" t="Include" />
                     </e>
                   </e>
-                  <e p="Tools" t="Include">
-                    <e p="Screenshoter.cs" t="Include" />
-                  </e>
                   <e p="UIManager.cs" t="Include" />
                 </e>
               </e>

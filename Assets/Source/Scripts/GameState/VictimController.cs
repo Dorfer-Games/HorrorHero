@@ -9,6 +9,7 @@ public class VictimController : GameSystem, IIniting
 {
     [SerializeField] private float time;
     [SerializeField] private Transform znak;
+    [SerializeField] private float timeFear;
 
     [SerializeField] private List<Transform> eyes;
 
@@ -56,7 +57,7 @@ public class VictimController : GameSystem, IIniting
     {
         znak.gameObject.SetActive(true);
         znak.localScale = new Vector3(1, 0.1f, 1);
-        znak.DOScaleY(1, 0.3f).SetEase(Ease.OutBounce).OnComplete(SeeBackward);
+        znak.DOScaleY(1, timeFear).SetEase(Ease.OutBounce).OnComplete(SeeBackward);
     }
     
 
@@ -81,13 +82,13 @@ public class VictimController : GameSystem, IIniting
 
     private void ReturnRptation()
     {
-        Vector3 newRotate = new Vector3(0, 0, 0);
+        Vector3 newRotate = Vector3.zero;
+        game.fear = false;
         victim.DORotate(newRotate, 0.5f).OnComplete(Run);
     }
 
     private void Run()
     {
-        game.fear = false;
         game.seeBackward = false;
         victimNavMeshAgent.speed += 1;
         victimNavMeshAgent.enabled = true;

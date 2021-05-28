@@ -20,7 +20,7 @@ public class FinishIndicateSystem : GameSystem, IUpdating
             Bootstrap.ChangeGameState(EGamestate.Lose);
         }
 
-        if (game.victim.transform.position.z >= game.finish.transform.position.z)
+        if (game.victim.transform.position.z >= game.finish.transform.position.z-1)
         {
             Bootstrap.ChangeGameState(EGamestate.Win);
         }
