@@ -97,6 +97,40 @@
             <e p="ProjectVersion.txt" t="Include" />
           </e>
         </e>
+        <e p="Epic Toon FX" t="Include">
+          <e p="Demo" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="ETFXButtonScript.cs" t="Include" />
+              <e p="ETFXFireProjectile.cs" t="Include" />
+              <e p="ETFXLoopScript.cs" t="Include" />
+              <e p="ETFXMouseOrbit.cs" t="Include" />
+              <e p="ETFXProjectileScript.cs" t="Include" />
+              <e p="ETFXSceneManager.cs" t="Include" />
+              <e p="ETFXTarget.cs" t="Include" />
+              <e p="VFX Library" t="Include">
+                <e p="ParticleEffectsLibrary.cs" t="Include" />
+                <e p="PEButtonScript.cs" t="Include" />
+                <e p="UICanvasManager.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Prefabs" t="Include">
+            <e p="Combat" t="Include">
+              <e p="Combat FX.txt" t="Include" />
+            </e>
+            <e p="Environment" t="Include">
+              <e p="Environment FX.txt" t="Include" />
+            </e>
+            <e p="Interactive" t="Include">
+              <e p="Interactive FX.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="ETFXLightFade.cs" t="Include" />
+            <e p="ETFXPitchRandomizer.cs" t="Include" />
+            <e p="ETFXRotation.cs" t="Include" />
+          </e>
+        </e>
         <e p="NaughtyAttributes" t="Include">
           <e p="Scripts" t="Include">
             <e p="Core" t="Include">
@@ -296,12 +330,12 @@
           <e p="Scripts" t="Include">
             <e p="Components" t="Include">
               <e p="ButtonClickRetry.cs" t="Include" />
-              <e p="MainCamera.cs" t="Include" />
             </e>
             <e p="GameState" t="Include">
               <e p="FearController.cs" t="Include" />
               <e p="FinishIndicateSystem.cs" t="Include" />
               <e p="InputSystem.cs" t="Include" />
+              <e p="MainCamera.cs" t="Include" />
               <e p="Murder.cs" t="Include" />
               <e p="MurderController.cs" t="Include" />
               <e p="ShadowController.cs" t="Include" />

@@ -25,7 +25,7 @@ public class MurderController : GameSystem, IIniting, IUpdating
     {
         murderCollider = game.murder.GetComponent<Collider>();
         murderRigidBody = game.murder.GetComponent<Rigidbody>();
-        murderMesh = game.murder.GetComponent<MeshRenderer>();
+        //murderMesh = game.murder.GetComponent<MeshRenderer>();
         murderPos = game.murder.transform.position;
         exactle = true;
     }
@@ -43,8 +43,8 @@ public class MurderController : GameSystem, IIniting, IUpdating
             if (!exactle)
             {
                 exactle = true;
-                murderMesh.enabled = true;
-                game.murder.transform.DOScaleY(1, 0.45f).SetEase(Ease.OutBounce);
+                //murderMesh.enabled = true;
+                game.murder.transform.DOScale(Vector3.one, 0.45f).SetEase(Ease.OutBounce);
             }
 
             murderPos.x = (xPosition - 0.5f) * maxX / 0.5f;
@@ -57,7 +57,7 @@ public class MurderController : GameSystem, IIniting, IUpdating
             if (exactle)
             {
                 exactle = false;
-                game.murder.transform.DOScaleY(0, 0.45f).SetEase(Ease.OutBounce).OnComplete(OffMesh);
+                game.murder.transform.DOScale(Vector3.zero, 0.45f).SetEase(Ease.OutBounce).OnComplete(OffMesh);
             }
         }
 
@@ -65,7 +65,7 @@ public class MurderController : GameSystem, IIniting, IUpdating
 
     void OffMesh()
     {
-        murderMesh.enabled = false;
+       // murderMesh.enabled = false;
     }
 }
 

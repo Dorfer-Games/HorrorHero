@@ -26,6 +26,7 @@ public class VictimController : GameSystem, IIniting
         game.fear = false;
         startTime = time;
         victimNavMeshAgent = game.victimGhost.GetComponent<NavMeshAgent>();
+        victimNavMeshAgent.enabled = true;
         victim = game.victim.transform;
         murderScript = game.murder.GetComponent<Murder>();
         victimNavMeshAgent.ActivateCurrentOffMeshLink(true);
@@ -40,7 +41,9 @@ public class VictimController : GameSystem, IIniting
             if (time > 0 && !murderScript.colissionBool())
             {
                 time -= 0.1f;
-                victim.transform.position = victimNavMeshAgent.transform.position;
+                Vector3 newPos = victimNavMeshAgent.transform.position;
+                newPos.y = victim.transform.position.y;
+                victim.transform.position = newPos;
             }
             else
             {
@@ -58,7 +61,7 @@ public class VictimController : GameSystem, IIniting
     {
         znak.gameObject.SetActive(true);
         znak.localScale = new Vector3(1, 0.1f, 1);
-        znak.DOScaleY(1, timeFear).SetEase(Ease.OutBounce).OnComplete(SeeBackward);
+        znak.DOScaleY(0.6f, timeFear).SetEase(Ease.OutBounce).OnComplete(SeeBackward);
     }
     
 
@@ -85,12 +88,12 @@ public class VictimController : GameSystem, IIniting
     {
         Vector3 newRotate = Vector3.zero;
         game.fear = false;
+        game.seeBackward = false;
         victim.DORotate(newRotate, 0.5f).OnComplete(Run);
     }
 
     private void Run()
     {
-        game.seeBackward = false;
         victimNavMeshAgent.speed += 1;
         victimNavMeshAgent.enabled = true;
         time = startTime;

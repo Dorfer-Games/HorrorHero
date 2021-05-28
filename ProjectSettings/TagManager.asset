@@ -10,6 +10,8 @@ TagManager:
   - Murder
   - Fear
   - VictimGhost
+  - Missile
+  - Root
   layers:
   - Default
   - TransparentFX

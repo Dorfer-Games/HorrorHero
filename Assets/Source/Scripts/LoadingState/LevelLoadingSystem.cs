@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Kuhpik;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UI;
 
 public class LevelLoadingSystem : GameSystem, IIniting
@@ -18,6 +19,7 @@ public class LevelLoadingSystem : GameSystem, IIniting
         game.victim = GameObject.FindWithTag("Victim");
         game.murder = GameObject.FindWithTag("Murder");
         game.victimGhost = GameObject.FindWithTag("VictimGhost");
+        game.victimGhost.GetComponent<NavMeshAgent>().enabled = false;
         game.masking = true;
         game.fearBar = GameObject.FindWithTag("Fear").GetComponent<Scrollbar>();
         game.finish = GameObject.FindWithTag("EndLevel");

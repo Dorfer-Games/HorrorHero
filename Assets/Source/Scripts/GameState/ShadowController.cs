@@ -20,16 +20,16 @@ public class ShadowController : GameSystem, IIniting, IUpdating
         if (!game.masking && exactle)
         {
             exactle = false;
-            shadowMask.DOMoveZ(game.victim.transform.position.z + 1.8f, 0.5f);
+            shadowMask.DOLocalMoveZ(1.8f, 0.45f);
         }
 
         if (game.masking && !exactle)
         {
             exactle = true;
-            shadowMask.DOMoveZ(game.victim.transform.position.z -0.5f, 0.5f);
+            shadowMask.DOLocalMoveZ(-1.4f, 0.45f);
         }
 
-        if (game.masking && exactle)
+        /*if (game.masking && exactle)
         {
             Vector3 pos = game.victim.transform.position;
             pos.z -= 0.5f;
@@ -38,6 +38,6 @@ public class ShadowController : GameSystem, IIniting, IUpdating
             pos.z += 0.5f;
             pos.z -= 1.34f;
             shadow.transform.position = pos;
-        }
+        }*/
     }
 }
