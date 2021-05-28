@@ -304,6 +304,7 @@
               <e p="InputSystem.cs" t="Include" />
               <e p="Murder.cs" t="Include" />
               <e p="MurderController.cs" t="Include" />
+              <e p="ShadowController.cs" t="Include" />
               <e p="VictimController.cs" t="Include" />
             </e>
             <e p="LoadingState" t="Include">
