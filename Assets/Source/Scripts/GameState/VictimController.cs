@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using DG.Tweening;
 using Kuhpik;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -11,15 +12,18 @@ public class VictimController : GameSystem, IIniting
     [SerializeField] private Transform znak;
     [SerializeField] private float timeFear;
 
+    public GameObject animGameObject;
     [SerializeField] private List<Transform> eyes;
 
     private float startTime;
     private Murder murderScript;
- 
+    private Animator anim;
     private Transform victim;
 
     private Vector3 distance;
     private NavMeshAgent victimNavMeshAgent;
+    private RectTransform screenPositions;
+    private float durationY;
     
     void IIniting.OnInit()
     {
@@ -31,7 +35,11 @@ public class VictimController : GameSystem, IIniting
         murderScript = game.murder.GetComponent<Murder>();
         victimNavMeshAgent.ActivateCurrentOffMeshLink(true);
         victimNavMeshAgent.SetDestination(game.finish.transform.position);
-        znak.gameObject.SetActive(false);
+        znak.GetChild(0).gameObject.SetActive(false);
+        znak.GetChild(1).gameObject.SetActive(false);
+        screenPositions = znak.GetComponent<RectTransform>();
+        durationY = screenPositions.position.y - Camera.main.WorldToScreenPoint(victim.position).y;
+        anim = animGameObject.GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -44,12 +52,15 @@ public class VictimController : GameSystem, IIniting
                 Vector3 newPos = victimNavMeshAgent.transform.position;
                 newPos.y = victim.transform.position.y;
                 victim.transform.position = newPos;
+                victim.transform.rotation = victimNavMeshAgent.transform.rotation;
             }
             else
             {
                 if (victimNavMeshAgent.enabled)
                 {
+                    time = 0;
                     game.fear = true;
+                    anim.SetBool("SeeBackward", true);
                     victimNavMeshAgent.enabled = false;
                     Znak();
                 }
@@ -59,21 +70,30 @@ public class VictimController : GameSystem, IIniting
 
     private void Znak()
     {
-        znak.gameObject.SetActive(true);
-        znak.localScale = new Vector3(1, 0.1f, 1);
-        znak.DOScaleY(0.6f, timeFear).SetEase(Ease.OutBounce).OnComplete(SeeBackward);
+        znak.GetChild(0).gameObject.SetActive(true);
+        Vector3 znakPose = Camera.main.WorldToScreenPoint(victim.position);
+        znakPose.y += durationY;
+        screenPositions.position = znakPose;
+        screenPositions = znak.GetChild(0).GetComponent<RectTransform>();
+        //znak.DOScaleY(0.6f, timeFear).SetEase(Ease.OutBounce).OnComplete(SeeBackward);
+        screenPositions.sizeDelta = new Vector2(100, 0);
+        screenPositions.DOSizeDelta(new Vector2(100,100), timeFear).SetEase(Ease.OutBounce).OnComplete(SeeBackward);
     }
     
 
     private void SeeBackward()
     {
-        znak.gameObject.SetActive(false);
+        znak.GetChild(0).gameObject.SetActive(false);
         Vector3 newRotate = new Vector3(0, 180, 0);
-        victim.DORotate(newRotate, 0.2f).OnComplete(AnimationSee);
+        victim.DORotate(-newRotate, 0.4f).OnComplete(AnimationSee);
     }
 
     private void AnimationSee()
     {
+        screenPositions = znak.GetChild(1).GetComponent<RectTransform>();
+        screenPositions.sizeDelta = new Vector2(100, 0);
+        znak.GetChild(1).gameObject.SetActive(true);
+        screenPositions.DOSizeDelta(new Vector2(100,100), timeFear).SetEase(Ease.OutBounce).OnComplete(OffZnaks);
         game.seeBackward = true;
         Vector3 eyePos = eyes[0].localPosition;
         eyePos.x = 0.05f;
@@ -84,17 +104,25 @@ public class VictimController : GameSystem, IIniting
 
     }
 
+    private void OffZnaks()
+    {
+        znak.GetChild(0).gameObject.SetActive(false);
+        znak.GetChild(1).gameObject.SetActive(false);
+    }
+
     private void ReturnRptation()
     {
         Vector3 newRotate = Vector3.zero;
         game.fear = false;
         game.seeBackward = false;
+        victimNavMeshAgent.speed += 1.5f;
+        anim.SetBool("SeeBackward", false);
+        anim.SetFloat("Run", victimNavMeshAgent.speed);
         victim.DORotate(newRotate, 0.5f).OnComplete(Run);
     }
 
     private void Run()
     {
-        victimNavMeshAgent.speed += 1;
         victimNavMeshAgent.enabled = true;
         time = startTime;
         victimNavMeshAgent.SetDestination(game.finish.transform.position);

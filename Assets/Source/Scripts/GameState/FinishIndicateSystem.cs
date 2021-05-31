@@ -9,9 +9,11 @@ using UnityEngine.Serialization;
 public class FinishIndicateSystem : GameSystem, IIniting,IUpdating
 {
     private NavMeshAgent victimAgent;
+    private EndLevel endlvl;
     void IIniting.OnInit()
     {
         victimAgent = game.victimGhost.GetComponent<NavMeshAgent>();
+        endlvl = game.finish.GetComponent<EndLevel>();
     }
     void IUpdating.OnUpdate()
     {
@@ -27,7 +29,7 @@ public class FinishIndicateSystem : GameSystem, IIniting,IUpdating
             Bootstrap.ChangeGameState(EGamestate.Lose);
         }
 
-        if (game.victim.transform.position.z >= game.finish.transform.position.z-1)
+        if (endlvl.end)
         {
             victimAgent.enabled = false;
             Bootstrap.ChangeGameState(EGamestate.Win);
