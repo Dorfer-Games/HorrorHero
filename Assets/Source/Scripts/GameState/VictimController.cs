@@ -28,7 +28,6 @@ public class VictimController : GameSystem, IIniting
 
     private Vector2 startHeightQuestion;
     private Vector2 startHeightWat;
-    
     private float durationY;
     
     void IIniting.OnInit()
@@ -47,7 +46,6 @@ public class VictimController : GameSystem, IIniting
         screenPositions = znak.GetComponent<RectTransform>();
         questionPosition = znak.GetChild(0).GetComponent<RectTransform>();
         watPosition = znak.GetChild(1).GetComponent<RectTransform>();
-
         startHeightQuestion = questionPosition.sizeDelta;
         startHeightWat = watPosition.sizeDelta;
         
@@ -65,6 +63,9 @@ public class VictimController : GameSystem, IIniting
                 Vector3 newPos = victimNavMeshAgent.transform.position;
                 newPos.y = victim.transform.position.y;
                 victim.transform.position = newPos;
+                /*Vector3 rotate = victimNavMeshAgent.transform.rotation.eulerAngles;
+                rotate.y *= 10;
+                victim.transform.rotation = Quaternion.Euler(rotate);*/
                 victim.transform.rotation = victimNavMeshAgent.transform.rotation;
             }
             else
