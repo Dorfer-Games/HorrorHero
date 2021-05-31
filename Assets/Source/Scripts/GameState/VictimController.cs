@@ -23,6 +23,12 @@ public class VictimController : GameSystem, IIniting
     private Vector3 distance;
     private NavMeshAgent victimNavMeshAgent;
     private RectTransform screenPositions;
+    private RectTransform questionPosition;
+    private RectTransform watPosition;
+
+    private Vector2 startHeightQuestion;
+    private Vector2 startHeightWat;
+    
     private float durationY;
     
     void IIniting.OnInit()
@@ -37,7 +43,14 @@ public class VictimController : GameSystem, IIniting
         victimNavMeshAgent.SetDestination(game.finish.transform.position);
         znak.GetChild(0).gameObject.SetActive(false);
         znak.GetChild(1).gameObject.SetActive(false);
+        
         screenPositions = znak.GetComponent<RectTransform>();
+        questionPosition = znak.GetChild(0).GetComponent<RectTransform>();
+        watPosition = znak.GetChild(1).GetComponent<RectTransform>();
+
+        startHeightQuestion = questionPosition.sizeDelta;
+        startHeightWat = watPosition.sizeDelta;
+        
         durationY = screenPositions.position.y - Camera.main.WorldToScreenPoint(victim.position).y;
         anim = animGameObject.GetComponent<Animator>();
     }
@@ -74,10 +87,9 @@ public class VictimController : GameSystem, IIniting
         Vector3 znakPose = Camera.main.WorldToScreenPoint(victim.position);
         znakPose.y += durationY;
         screenPositions.position = znakPose;
-        screenPositions = znak.GetChild(0).GetComponent<RectTransform>();
         //znak.DOScaleY(0.6f, timeFear).SetEase(Ease.OutBounce).OnComplete(SeeBackward);
-        screenPositions.sizeDelta = new Vector2(100, 0);
-        screenPositions.DOSizeDelta(new Vector2(100,100), timeFear).SetEase(Ease.OutBounce).OnComplete(SeeBackward);
+        questionPosition.sizeDelta = Vector2.zero;
+        questionPosition.DOSizeDelta(startHeightQuestion, timeFear).SetEase(Ease.OutBounce).OnComplete(SeeBackward);
     }
     
 
@@ -90,10 +102,9 @@ public class VictimController : GameSystem, IIniting
 
     private void AnimationSee()
     {
-        screenPositions = znak.GetChild(1).GetComponent<RectTransform>();
-        screenPositions.sizeDelta = new Vector2(100, 0);
+        watPosition.sizeDelta = Vector2.zero;
         znak.GetChild(1).gameObject.SetActive(true);
-        screenPositions.DOSizeDelta(new Vector2(100,100), timeFear).SetEase(Ease.OutBounce).OnComplete(OffZnaks);
+        watPosition.DOSizeDelta(startHeightWat, timeFear).SetEase(Ease.OutBounce).OnComplete(OffZnaks);
         game.seeBackward = true;
         Vector3 eyePos = eyes[0].localPosition;
         eyePos.x = 0.05f;
