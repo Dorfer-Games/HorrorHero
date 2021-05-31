@@ -12,8 +12,11 @@ public class VictimController : GameSystem, IIniting
     [SerializeField] private Transform znak;
     [SerializeField] private float timeFear;
 
-    public GameObject animGameObject;
+    [SerializeField] private GameObject animGameObject;
     [SerializeField] private List<Transform> eyes;
+
+    [SerializeField] private float firstStepAnim;
+    [SerializeField] private float secondStepAnim;
 
     private float startTime;
     private Murder murderScript;
@@ -130,6 +133,7 @@ public class VictimController : GameSystem, IIniting
         victimNavMeshAgent.speed += 1.5f;
         anim.SetBool("SeeBackward", false);
         anim.SetFloat("Run", victimNavMeshAgent.speed);
+       
         victim.DORotate(newRotate, 0.5f).OnComplete(Run);
     }
 
@@ -138,5 +142,13 @@ public class VictimController : GameSystem, IIniting
         victimNavMeshAgent.enabled = true;
         time = startTime;
         victimNavMeshAgent.SetDestination(game.finish.transform.position);
+        if (victimNavMeshAgent.speed == firstStepAnim || victimNavMeshAgent.speed == secondStepAnim)
+        {
+            anim.SetFloat("Speed", 1);
+        }
+        else
+        {
+            anim.SetFloat("Speed", anim.GetFloat("Speed") +0.5f);
+        }
     }
 }
