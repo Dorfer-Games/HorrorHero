@@ -862,8 +862,8 @@ MonoBehaviour:
   eyes:
   - {fileID: 1339788771}
   - {fileID: 123795367}
-  firstStepAnim: 6.5
-  secondStepAnim: 11
+  firstStepAnim: 5
+  secondStepAnim: 8
 --- !u!1 &437046029
 GameObject:
   m_ObjectHideFlags: 0

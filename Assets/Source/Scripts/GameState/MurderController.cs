@@ -13,6 +13,7 @@ public class MurderController : GameSystem, IIniting, IUpdating
     [SerializeField] private Scrollbar controller;
     [SerializeField] private float maxX;
     [SerializeField] private GameObject animGameObject;
+    
     private float xPosition;
     private Vector3 murderPos;
     private Collider murderCollider;
@@ -35,7 +36,6 @@ public class MurderController : GameSystem, IIniting, IUpdating
     {
         //murderMesh.enabled = game.masking;
         murderCollider.enabled = game.masking;
-        anim.SetFloat("Run", victimAgent.speed);
         xPosition = controller.value;
         murderPos = game.murder.transform.position;
 
@@ -44,6 +44,7 @@ public class MurderController : GameSystem, IIniting, IUpdating
             if (!exactle)
             {
                 exactle = true;
+                anim.SetFloat("Run", victimAgent.speed);
                 game.murder.transform.DOScale(Vector3.one, 0.45f).SetEase(Ease.OutBounce);
             }
 
@@ -65,7 +66,7 @@ public class MurderController : GameSystem, IIniting, IUpdating
 
     void OffMesh()
     {
-       // murderMesh.enabled = false;
+        
     }
 }
 

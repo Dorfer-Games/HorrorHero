@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using Kuhpik;
 using UnityEditor.Animations;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -21,6 +22,7 @@ public class VictimController : GameSystem, IIniting
     private float startTime;
     private Murder murderScript;
     private Animator anim;
+    private Animator animMurder;
     private Transform victim;
 
     private Vector3 distance;
@@ -54,11 +56,12 @@ public class VictimController : GameSystem, IIniting
         
         durationY = screenPositions.position.y - Camera.main.WorldToScreenPoint(victim.position).y;
         anim = animGameObject.GetComponent<Animator>();
+        animMurder = game.murder.transform.GetChild(0).GetComponent<Animator>();
     }
 
     void FixedUpdate()
     {
-        /**/if (Bootstrap.GetCurrentGamestate() == EGamestate.Game)
+        if (Bootstrap.GetCurrentGamestate() == EGamestate.Game)
         {
             if (time > 0 && !murderScript.colissionBool())
             {
@@ -82,6 +85,15 @@ public class VictimController : GameSystem, IIniting
                     Znak();
                 }
             }
+        }
+        else if (Bootstrap.GetCurrentGamestate() == EGamestate.Win)
+        {
+            /*маньяк бьет жертву ломом*/
+            animMurder.SetBool("EndWin", true);
+        }
+        else if (Bootstrap.GetCurrentGamestate() == EGamestate.Lose)
+        {
+            /*распыляем в дицо баллончик*/
         }
     }
 
@@ -131,6 +143,18 @@ public class VictimController : GameSystem, IIniting
         game.fear = false;
         game.seeBackward = false;
         victimNavMeshAgent.speed += 1.5f;
+        
+        if (victimNavMeshAgent.speed == firstStepAnim || victimNavMeshAgent.speed == secondStepAnim)
+        {
+            anim.SetFloat("Speed", 1);
+            animMurder.SetFloat("Speed", 1);
+        }
+        else
+        {
+            anim.SetFloat("Speed", anim.GetFloat("Speed") +0.5f);
+            animMurder.SetFloat("Speed", anim.GetFloat("Speed") +0.5f);
+        }
+        
         anim.SetBool("SeeBackward", false);
         anim.SetFloat("Run", victimNavMeshAgent.speed);
        
@@ -142,13 +166,5 @@ public class VictimController : GameSystem, IIniting
         victimNavMeshAgent.enabled = true;
         time = startTime;
         victimNavMeshAgent.SetDestination(game.finish.transform.position);
-        if (victimNavMeshAgent.speed == firstStepAnim || victimNavMeshAgent.speed == secondStepAnim)
-        {
-            anim.SetFloat("Speed", 1);
-        }
-        else
-        {
-            anim.SetFloat("Speed", anim.GetFloat("Speed") +0.5f);
-        }
     }
 }

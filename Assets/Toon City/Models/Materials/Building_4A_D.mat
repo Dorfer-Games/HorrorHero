@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Building_4A_D
-  m_Shader: {fileID: 4800000, guid: 325e972045994ba4ab87c5aab9e80a43, type: 3}
+  m_Shader: {fileID: 4800000, guid: 1341dad7fd613134d97cd8ae62656642, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
@@ -61,6 +61,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _TextureRamp:
         m_Texture: {fileID: 2800000, guid: bd4c7918ddba6d7419b470c676386dd4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample1:
+        m_Texture: {fileID: 2800000, guid: 55cd3262d0d994b439e27e31ec546940, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample3:
