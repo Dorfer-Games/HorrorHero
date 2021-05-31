@@ -89,14 +89,17 @@ public class VictimController : GameSystem, IIniting
         else if (Bootstrap.GetCurrentGamestate() == EGamestate.Win)
         {
             /*маньяк бьет жертву ломом*/
+            Vector3 newRotate = new Vector3(0, 180, 0);
+            victim.DORotate(-newRotate, 0.25f);
             anim.SetBool("Win", true);
-            animMurder.SetBool("EndWin", true);
+            animMurder.SetBool("Win", true);
         }
         else if (Bootstrap.GetCurrentGamestate() == EGamestate.Lose)
         {
             Vector3 newRotate = new Vector3(0, 180, 0);
             victim.DORotate(-newRotate, 0.25f);
             anim.SetBool("Lose", true);
+            animMurder.SetBool("Lose", true);
             /*распыляем в дицо баллончик*/
         }
     }
