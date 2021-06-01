@@ -12,6 +12,7 @@ TagManager:
   - VictimGhost
   - Missile
   - Root
+  - LightCatScene
   layers:
   - Default
   - TransparentFX

@@ -8,7 +8,7 @@ using UnityEngine.AI;
 using UnityEngine.UI;
 using Vector3 = UnityEngine.Vector3;
 
-public class MurderController : GameSystem, IIniting
+public class MurderController : GameSystem, IIniting, IUpdating
 {
     [SerializeField] private Scrollbar controller;
     [SerializeField] private float maxX;
@@ -32,7 +32,7 @@ public class MurderController : GameSystem, IIniting
         victimAgent = game.victimGhost.GetComponent<NavMeshAgent>();
     }
 
-    void FixedUpdate()
+    void IUpdating.OnUpdate()
     {
         //murderMesh.enabled = game.masking;
         murderCollider.enabled = game.masking;
