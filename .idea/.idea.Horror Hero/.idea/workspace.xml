@@ -249,7 +249,7 @@
       <path value="$PROJECT_DIR$/Assets/NaughtyAttributes/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="854" />
     <option name="width" value="1074" />
     <option name="height" value="1056" />
@@ -430,12 +430,12 @@
       <workItem from="1621958097426" duration="1271000" />
       <workItem from="1621962569558" duration="34006000" />
       <workItem from="1622187807105" duration="21464000" />
-      <workItem from="1622446461994" duration="23112000" />
+      <workItem from="1622446461994" duration="22622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80967000" />
+    <option name="totallyTimeSpent" value="80477000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -447,7 +447,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25906184" />
