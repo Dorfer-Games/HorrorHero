@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44702792, g: 0.49692327, b: 0.5750748, a: 1}
+  m_IndirectSpecularColor: {r: 0.44702846, g: 0.49692464, b: 0.57507646, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5438,7 +5438,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 50
-  m_StoppingDistance: 0
+  m_StoppingDistance: 3
   m_AutoTraverseOffMeshLink: 0
   m_AutoBraking: 0
   m_AutoRepath: 1
@@ -5802,11 +5802,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 635083266128235437, guid: 0ef9ab7ee6985f0448a6db8c909432db,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 127.36
-      objectReference: {fileID: 0}
     - target: {fileID: 5917221771640014331, guid: 0ef9ab7ee6985f0448a6db8c909432db,
         type: 3}
       propertyPath: m_RootOrder
