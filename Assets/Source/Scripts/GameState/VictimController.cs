@@ -88,6 +88,7 @@ public class VictimController : GameSystem, IIniting
             /*маньяк бьет жертву ломом*/
             Vector3 newRotate = new Vector3(0, 180, 0);
             victim.DORotate(-newRotate, 0.25f);
+            game.masking = true;
             anim.SetBool("Win", true);
             animMurder.SetBool("Win", true);
         }
@@ -95,6 +96,7 @@ public class VictimController : GameSystem, IIniting
         {
             Vector3 newRotate = new Vector3(0, 180, 0);
             victim.DORotate(-newRotate, 0.25f);
+            game.masking = true;
             anim.SetBool("Lose", true);
             animMurder.SetBool("Lose", true);
             /*распыляем в дицо баллончик*/
