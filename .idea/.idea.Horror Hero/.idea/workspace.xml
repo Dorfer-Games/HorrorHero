@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc4f9fc-f7f3-40c6-b50f-64abc3b1b0e6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Horror Hero/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Horror Hero/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Animations/Murder.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Animations/Murder.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Source/Animations/SprayAnimation.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Animations/SprayAnimation.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Source/Animations/Victim.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Animations/Victim.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/GameState/VictimController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Scripts/GameState/VictimController.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,12 +38,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="8717" />
+          <entry key="cs" value="8712" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="8717" />
+          <entry key="C#" value="8712" />
         </counts>
       </usages-collector>
     </session>
@@ -62,28 +62,28 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/GameState/VictimController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="87" column="9" lean-forward="true" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
+            <state relative-caret-position="302">
+              <caret line="83" column="55" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
               <folding>
-                <marker date="1622489581244" expanded="false" signature="6:205" ph="..." />
-                <marker date="1622489581244" expanded="true" signature="259:6310" ph="{...}" />
-                <marker date="1622489581244" expanded="true" signature="1096:2191" ph="{...}" />
-                <marker date="1622489581244" expanded="true" signature="2215:3856" ph="{...}" />
-                <marker date="1622489581244" expanded="true" signature="2285:3211" ph="{...}" />
-                <marker date="1622489581244" expanded="true" signature="2354:2865" ph="{...}" />
-                <marker date="1622489581244" expanded="true" signature="2595:2768" ph="/* Vector3 rotate = victimNavMeshAgent.transform.rotation.eulerAngles; ... */" />
-                <marker date="1622489581244" expanded="true" signature="2882:3201" ph="{...}" />
-                <marker date="1622489581244" expanded="true" signature="2944:3187" ph="{...}" />
-                <marker date="1622489581244" expanded="true" signature="3279:3528" ph="{...}" />
-                <marker date="1622489581244" expanded="true" signature="3597:3850" ph="{...}" />
-                <marker date="1622489581244" expanded="true" signature="3881:4357" ph="{...}" />
-                <marker date="1622489581244" expanded="true" signature="4394:4580" ph="{...}" />
-                <marker date="1622489581244" expanded="true" signature="4613:5227" ph="{...}" />
-                <marker date="1622489581244" expanded="true" signature="5256:5376" ph="{...}" />
-                <marker date="1622489581244" expanded="true" signature="5411:6128" ph="{...}" />
-                <marker date="1622489581244" expanded="true" signature="5672:5776" ph="{...}" />
-                <marker date="1622489581244" expanded="true" signature="5789:5947" ph="{...}" />
-                <marker date="1622489581244" expanded="true" signature="6152:6308" ph="{...}" />
+                <marker date="1622485200448" expanded="false" signature="6:205" ph="..." />
+                <marker date="1622485200448" expanded="true" signature="259:6163" ph="{...}" />
+                <marker date="1622485200448" expanded="true" signature="1096:2191" ph="{...}" />
+                <marker date="1622485200448" expanded="true" signature="2215:3709" ph="{...}" />
+                <marker date="1622485200448" expanded="true" signature="2285:3211" ph="{...}" />
+                <marker date="1622485200448" expanded="true" signature="2354:2865" ph="{...}" />
+                <marker date="1622485200448" expanded="true" signature="2595:2768" ph="/* Vector3 rotate = victimNavMeshAgent.transform.rotation.eulerAngles; ... */" />
+                <marker date="1622485200448" expanded="true" signature="2882:3201" ph="{...}" />
+                <marker date="1622485200448" expanded="true" signature="2944:3187" ph="{...}" />
+                <marker date="1622485200448" expanded="true" signature="3279:3427" ph="{...}" />
+                <marker date="1622485200448" expanded="true" signature="3496:3703" ph="{...}" />
+                <marker date="1622485200448" expanded="true" signature="3734:4210" ph="{...}" />
+                <marker date="1622485200448" expanded="true" signature="4247:4433" ph="{...}" />
+                <marker date="1622485200448" expanded="true" signature="4466:5080" ph="{...}" />
+                <marker date="1622485200448" expanded="true" signature="5109:5229" ph="{...}" />
+                <marker date="1622485200448" expanded="true" signature="5264:5981" ph="{...}" />
+                <marker date="1622485200448" expanded="true" signature="5525:5629" ph="{...}" />
+                <marker date="1622485200448" expanded="true" signature="5642:5800" ph="{...}" />
+                <marker date="1622485200448" expanded="true" signature="6005:6161" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -249,7 +249,7 @@
       <path value="$PROJECT_DIR$/Assets/NaughtyAttributes/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="854" />
     <option name="width" value="1074" />
     <option name="height" value="1056" />
@@ -430,12 +430,12 @@
       <workItem from="1621958097426" duration="1271000" />
       <workItem from="1621962569558" duration="34006000" />
       <workItem from="1622187807105" duration="21464000" />
-      <workItem from="1622446461994" duration="22622000" />
+      <workItem from="1622446461994" duration="21403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80477000" />
+    <option name="totallyTimeSpent" value="79258000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -643,28 +643,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/GameState/VictimController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="87" column="9" lean-forward="true" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
+        <state relative-caret-position="302">
+          <caret line="83" column="55" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
           <folding>
-            <marker date="1622489581244" expanded="false" signature="6:205" ph="..." />
-            <marker date="1622489581244" expanded="true" signature="259:6310" ph="{...}" />
-            <marker date="1622489581244" expanded="true" signature="1096:2191" ph="{...}" />
-            <marker date="1622489581244" expanded="true" signature="2215:3856" ph="{...}" />
-            <marker date="1622489581244" expanded="true" signature="2285:3211" ph="{...}" />
-            <marker date="1622489581244" expanded="true" signature="2354:2865" ph="{...}" />
-            <marker date="1622489581244" expanded="true" signature="2595:2768" ph="/* Vector3 rotate = victimNavMeshAgent.transform.rotation.eulerAngles; ... */" />
-            <marker date="1622489581244" expanded="true" signature="2882:3201" ph="{...}" />
-            <marker date="1622489581244" expanded="true" signature="2944:3187" ph="{...}" />
-            <marker date="1622489581244" expanded="true" signature="3279:3528" ph="{...}" />
-            <marker date="1622489581244" expanded="true" signature="3597:3850" ph="{...}" />
-            <marker date="1622489581244" expanded="true" signature="3881:4357" ph="{...}" />
-            <marker date="1622489581244" expanded="true" signature="4394:4580" ph="{...}" />
-            <marker date="1622489581244" expanded="true" signature="4613:5227" ph="{...}" />
-            <marker date="1622489581244" expanded="true" signature="5256:5376" ph="{...}" />
-            <marker date="1622489581244" expanded="true" signature="5411:6128" ph="{...}" />
-            <marker date="1622489581244" expanded="true" signature="5672:5776" ph="{...}" />
-            <marker date="1622489581244" expanded="true" signature="5789:5947" ph="{...}" />
-            <marker date="1622489581244" expanded="true" signature="6152:6308" ph="{...}" />
+            <marker date="1622485200448" expanded="false" signature="6:205" ph="..." />
+            <marker date="1622485200448" expanded="true" signature="259:6163" ph="{...}" />
+            <marker date="1622485200448" expanded="true" signature="1096:2191" ph="{...}" />
+            <marker date="1622485200448" expanded="true" signature="2215:3709" ph="{...}" />
+            <marker date="1622485200448" expanded="true" signature="2285:3211" ph="{...}" />
+            <marker date="1622485200448" expanded="true" signature="2354:2865" ph="{...}" />
+            <marker date="1622485200448" expanded="true" signature="2595:2768" ph="/* Vector3 rotate = victimNavMeshAgent.transform.rotation.eulerAngles; ... */" />
+            <marker date="1622485200448" expanded="true" signature="2882:3201" ph="{...}" />
+            <marker date="1622485200448" expanded="true" signature="2944:3187" ph="{...}" />
+            <marker date="1622485200448" expanded="true" signature="3279:3427" ph="{...}" />
+            <marker date="1622485200448" expanded="true" signature="3496:3703" ph="{...}" />
+            <marker date="1622485200448" expanded="true" signature="3734:4210" ph="{...}" />
+            <marker date="1622485200448" expanded="true" signature="4247:4433" ph="{...}" />
+            <marker date="1622485200448" expanded="true" signature="4466:5080" ph="{...}" />
+            <marker date="1622485200448" expanded="true" signature="5109:5229" ph="{...}" />
+            <marker date="1622485200448" expanded="true" signature="5264:5981" ph="{...}" />
+            <marker date="1622485200448" expanded="true" signature="5525:5629" ph="{...}" />
+            <marker date="1622485200448" expanded="true" signature="5642:5800" ph="{...}" />
+            <marker date="1622485200448" expanded="true" signature="6005:6161" ph="{...}" />
           </folding>
         </state>
       </provider>
