@@ -79,25 +79,6 @@ public class VictimController : GameSystem, IIniting
                 }
             }
         }
-        else if (Bootstrap.GetCurrentGamestate() == EGamestate.Win)
-        {
-            /*маньяк бьет жертву ломом*/
-            Vector3 newRotate = new Vector3(0, 180, 0);
-            victim.DORotate(-newRotate, 0.25f);
-            game.masking = true;
-            anim.SetBool("Win", true);
-            animMurder.SetBool("Win", true);
-        }
-        else if (Bootstrap.GetCurrentGamestate() == EGamestate.Lose)
-        {
-            float angle3 = Vector3.SignedAngle(game.victim.transform.position, game.murder.transform.position, Vector3.down);
-            Vector3 newRotate = new Vector3(0, -180+angle3/2, 0);
-            victim.DORotate(newRotate, 0.25f);
-            game.masking = true;
-            anim.SetBool("Lose", true);
-            animMurder.SetBool("Lose", true);
-            /*распыляем в дицо баллончик*/
-        }
     }
 
     private void Znak()

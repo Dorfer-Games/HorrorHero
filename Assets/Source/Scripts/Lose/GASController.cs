@@ -1,40 +1,58 @@
 ﻿
 using DG.Tweening;
 using Kuhpik;
+using TMPro;
 using UnityEngine;
 
-public class GASController : GameSystem, IIniting
+public class GASController : GameSystem, IIniting, IUpdating
 {
     [SerializeField] private GameObject gas;
 
-    public float angle1;
-    public float angle2;
-    public float angle3;
-    public float angle4;
-    public float angle5;
-    public float angle6;
-    public float angle7;
+    public float angle;
+
+    private float newAngle;
+    private bool t;
 
     void IIniting.OnInit()
     {
         gas.SetActive(true);
+        game.masking = true;
+        Animator anim = game.victim.transform.GetChild(0).GetComponent<Animator>();
+        Animator animMurder = game.murder.transform.GetChild(0).GetComponent<Animator>();
+        anim.SetBool("Lose", true);
+        animMurder.SetBool("Lose", true);
         EndRotate();
-        Vector3 newRotate = new Vector3(0, -180, 0);
-       // //game.victim.transform.DORotate(-newRotate, 0.25f).OnComplete(EndRotate);
+        t = false;
+
+        Vector3 targetDir = game.murder.transform.position - game.victim.transform.position;
+        Vector3 forw = game.victim.transform.forward;
+
+        angle = Vector3.SignedAngle(targetDir, forw, Vector3.up);
+        
+        newAngle = -180 - angle;
+        
+        Vector3 newRotate = new Vector3(0, newAngle, 0);
+        game.victim.transform.DORotate(newRotate, 0.45f).OnComplete(EndRotate);
+        // //game.victim.transform.DORotate(-newRotate, 0.25f).OnComplete(EndRotate);
         //float angle = Vector3.Angle(game.victim.transform.position, game.murder.transform.position);
-       // game.victim.transform.rotation = Quaternion.Euler(new Vector3(0, angle, 0));
+        // game.victim.transform.rotation = Quaternion.Euler(new Vector3(0, angle, 0));
     }
 
     void EndRotate()
     {
-        angle1 = Vector3.SignedAngle(game.victim.transform.position, game.murder.transform.position, Vector3.zero);
-        angle2 = Vector3.SignedAngle(game.victim.transform.position, game.murder.transform.position, Vector3.up);
-        angle3 = Vector3.SignedAngle(game.victim.transform.position, game.murder.transform.position, Vector3.down);
-        angle4 = Vector3.SignedAngle(game.victim.transform.position, game.murder.transform.position, Vector3.forward);
-        angle5 = Vector3.SignedAngle(game.victim.transform.position, game.murder.transform.position, Vector3.back);
-                
+        t = true;
         //Vector3 newRotate = new Vector3(0, angle, 0);
         //game.victim.transform.DORotate(newRotate, 0.25f);
-        
+
     }
+
+    void IUpdating.OnUpdate()
+    {
+        if (t)
+        {
+            game.victim.transform.rotation = Quaternion.Euler(new Vector3(0, newAngle, 0));
+        }
+    }
+    
+    
 }

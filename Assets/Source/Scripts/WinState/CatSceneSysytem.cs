@@ -27,6 +27,15 @@ public class CatSceneSysytem : GameSystem, IIniting, IUpdating
           gameCoordinats.DOMoveX(13, 6f).OnComplete(EndRotate);
           game.light.transform.DOMoveY(0, 3f);
           light = game.light.GetComponent<Light>();
+          
+          Vector3 newRotate = new Vector3(0, 180, 0);
+          game.victim.transform.DORotate(-newRotate, 0.25f);
+          game.masking = true;
+
+          Animator anim = game.victim.transform.GetChild(0).GetComponent<Animator>();
+          Animator animMurder = game.murder.transform.GetChild(0).GetComponent<Animator>();
+          anim.SetBool("Win", true);
+          animMurder.SetBool("Win", true);
      }
 
      void EndRotate()
