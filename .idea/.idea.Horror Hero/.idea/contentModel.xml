@@ -344,6 +344,9 @@
             <e p="LoadingState" t="Include">
               <e p="LevelLoadingSystem.cs" t="Include" />
             </e>
+            <e p="Lose" t="Include">
+              <e p="GASController.cs" t="Include" />
+            </e>
             <e p="StartState" t="Include">
               <e p="PressInsication.cs" t="Include" />
             </e>
