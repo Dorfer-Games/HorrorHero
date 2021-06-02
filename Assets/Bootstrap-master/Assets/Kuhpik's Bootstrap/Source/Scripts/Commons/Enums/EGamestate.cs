@@ -10,6 +10,7 @@
         Game = 3,
         Lose = 4,
         Win = 5,
+        WinScreen = 6,
         Result = 10
 
         // Extend just like that

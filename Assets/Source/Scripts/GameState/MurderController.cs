@@ -23,6 +23,9 @@ public class MurderController : GameSystem, IIniting, IUpdating
 
     private MeshRenderer murderMesh;
 
+    private float previeDistance;
+    private float currentdistance;
+
     void IIniting.OnInit()
     {
         murderCollider = game.murder.GetComponent<Collider>();
@@ -30,6 +33,8 @@ public class MurderController : GameSystem, IIniting, IUpdating
         exactle = true;
         anim = animGameObject.GetComponent<Animator>();
         victimAgent = game.victimGhost.GetComponent<NavMeshAgent>();
+        previeDistance = 3;
+        currentdistance = previeDistance;
     }
 
     void IUpdating.OnUpdate()
@@ -45,12 +50,17 @@ public class MurderController : GameSystem, IIniting, IUpdating
             {
                 exactle = true;
                 anim.SetFloat("Run", victimAgent.speed);
-                game.murder.transform.DOScale(Vector3.one, 0.45f).SetEase(Ease.OutBounce);
+                game.murder.transform.GetChild(0).DOScale(Vector3.one, 0.45f).SetEase(Ease.OutBounce);
             }
 
             murderPos.x = (xPosition - 0.5f) * maxX / 0.5f;
-            murderPos.z = game.victim.transform.position.z - 3;
+            murderPos.z = game.victim.transform.position.z - currentdistance;
             game.murder.transform.position = murderPos;
+
+            if (currentdistance > previeDistance)
+            {
+                currentdistance -= 0.1f;
+            }
 
         }
         else
@@ -58,15 +68,11 @@ public class MurderController : GameSystem, IIniting, IUpdating
             if (exactle)
             {
                 exactle = false;
-                game.murder.transform.DOScale(Vector3.zero, 0.45f).SetEase(Ease.OutBounce).OnComplete(OffMesh);
+                game.murder.transform.GetChild(0).DOScale(Vector3.zero, 0.45f).SetEase(Ease.OutBounce);
             }
+            currentdistance = game.victim.transform.position.z - game.murder.transform.position.z;
         }
 
-    }
-
-    void OffMesh()
-    {
-        
     }
 }
 

@@ -34,6 +34,12 @@ public class FinishIndicateSystem : GameSystem, IIniting,IUpdating
             victimAgent.enabled = false;
             Bootstrap.ChangeGameState(EGamestate.Win);
         }
+
+        if (game.victim.transform.position.z - game.murder.transform.position.z > 42)
+        {
+            victimAgent.enabled = false;
+            Bootstrap.ChangeGameState(EGamestate.Lose);
+        }
         
     }
 }

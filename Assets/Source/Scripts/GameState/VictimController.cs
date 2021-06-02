@@ -119,14 +119,14 @@ public class VictimController : GameSystem, IIniting
     {
         znak.GetChild(0).gameObject.SetActive(false);
         Vector3 newRotate = new Vector3(0, 180, 0);
+        znak.GetChild(1).gameObject.SetActive(true);
+        watPosition.DOSizeDelta(startHeightWat, timeFear).SetEase(Ease.OutBounce).OnComplete(OffZnaks);
         victim.DORotate(-newRotate, 0.4f).OnComplete(AnimationSee);
     }
 
     private void AnimationSee()
     {
         watPosition.sizeDelta = Vector2.zero;
-        znak.GetChild(1).gameObject.SetActive(true);
-        watPosition.DOSizeDelta(startHeightWat, timeFear).SetEase(Ease.OutBounce).OnComplete(OffZnaks);
         game.seeBackward = true;
         Vector3 eyePos = eyes[0].localPosition;
         eyePos.x = 0.05f;

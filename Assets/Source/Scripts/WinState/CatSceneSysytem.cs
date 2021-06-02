@@ -22,19 +22,16 @@ public class CatSceneSysytem : GameSystem, IIniting, IUpdating
           Vector3 posVictim = game.victim.transform.position;
           posVictim.z -= 1.5f;
           game.murder.transform.DOMove(posVictim, 0.5f);
-          cam.transform.DOMove(pos, 3f).OnComplete(EndRotate);
+          cam.transform.DOMove(pos, 3f);
           cam.transform.DORotate(rot, 3f);
-          gameCoordinats.DOMoveX(13, 6f);
+          gameCoordinats.DOMoveX(13, 6f).OnComplete(EndRotate);
           game.light.transform.DOMoveY(0, 3f);
           light = game.light.GetComponent<Light>();
      }
 
      void EndRotate()
      {
-          //pos.z = 131.93f;
-          //cam.transform.DOMove(pos, 0.1f);
-         // cam.orthographic = true;
-          //game.victim.SetActive(false);
+          Bootstrap.ChangeGameState(EGamestate.WinScreen);
      }
      
      void IUpdating.OnUpdate()
