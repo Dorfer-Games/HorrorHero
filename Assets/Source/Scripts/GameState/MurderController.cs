@@ -78,6 +78,15 @@ public class MurderController : GameSystem, IIniting, IUpdating
 
             }
 
+            if (!victimAgent.enabled)
+            {
+                anim.SetBool("Stop", true);
+            }
+            else
+            {
+                anim.SetBool("Stop", false);
+            }
+
         }
         else
         {
