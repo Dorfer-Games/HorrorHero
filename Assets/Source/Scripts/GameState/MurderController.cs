@@ -13,6 +13,7 @@ public class MurderController : GameSystem, IIniting, IUpdating
     [SerializeField] private Scrollbar controller;
     [SerializeField] private float maxX;
     [SerializeField] private GameObject animGameObject;
+    [SerializeField] private Transform objectBone;
     
     private float xPosition;
     private Vector3 murderPos;
@@ -40,16 +41,18 @@ public class MurderController : GameSystem, IIniting, IUpdating
     void IUpdating.OnUpdate()
     {
         //murderMesh.enabled = game.masking;
-        murderCollider.enabled = game.masking;
-        xPosition = controller.value;
-        murderPos = game.murder.transform.position;
 
         if (game.masking)
         {
+            murderPos = game.murder.transform.position;
+            xPosition = controller.value;
+            
             if (!exactle)
             {
                 exactle = true;
+                game.murder.transform.GetChild(1).gameObject.SetActive(false);
                 anim.SetFloat("Run", victimAgent.speed);
+                murderCollider.enabled = game.masking;
                 game.murder.transform.GetChild(0).DOScale(Vector3.one, 0.45f).SetEase(Ease.OutBounce);
             }
 
@@ -59,7 +62,14 @@ public class MurderController : GameSystem, IIniting, IUpdating
 
             if (currentdistance > previeDistance)
             {
-                currentdistance -= 0.1f;
+                currentdistance -= 0.05f;
+                anim.speed *= 2;
+            }
+            else
+            {
+                currentdistance = previeDistance;
+                anim.speed = 1;
+
             }
 
         }
@@ -67,10 +77,18 @@ public class MurderController : GameSystem, IIniting, IUpdating
         {
             if (exactle)
             {
+                murderPos = game.murder.transform.position;
+                murderCollider.enabled = game.masking;
                 exactle = false;
+                game.murder.transform.GetChild(1).gameObject.SetActive(true);
                 game.murder.transform.GetChild(0).DOScale(Vector3.zero, 0.45f).SetEase(Ease.OutBounce);
             }
             currentdistance = game.victim.transform.position.z - game.murder.transform.position.z;
+            game.murder.transform.position = murderPos;
+            Vector3 posBone = objectBone.position;
+            posBone.z = game.victim.transform.position.z - 1.8f;
+            posBone.x = game.victim.transform.position.x;
+            objectBone.position = posBone;
         }
 
     }

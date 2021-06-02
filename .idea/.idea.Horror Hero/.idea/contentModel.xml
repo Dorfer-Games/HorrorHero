@@ -353,6 +353,17 @@
             </e>
           </e>
         </e>
+        <e p="Standard Assets" t="Include">
+          <e p="Effects" t="Include">
+            <e p="Projectors" t="Include">
+              <e p="Guidelines.txt" t="Include" />
+              <e p="Shaders" t="Include">
+                <e p="ProjectorLight.shader" t="Include" />
+                <e p="ProjectorMultiply.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Toon City" t="Include">
           <e p="Documentation" t="Include">
             <e p="ReadMe.txt" t="Include" />

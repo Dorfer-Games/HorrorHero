@@ -24,13 +24,12 @@ public class VictimController : GameSystem, IIniting
 
     private Vector3 distance;
     private NavMeshAgent victimNavMeshAgent;
-    private RectTransform screenPositions;
-    private RectTransform questionPosition;
-    private RectTransform watPosition;
+    private Transform screenPositions;
+    private Transform questionPosition;
+    private Transform watPosition;
 
     private Vector2 startHeightQuestion;
     private Vector2 startHeightWat;
-    private float durationY;
     
     void IIniting.OnInit()
     {
@@ -46,12 +45,11 @@ public class VictimController : GameSystem, IIniting
         znak.GetChild(1).gameObject.SetActive(false);
         
         screenPositions = znak.GetComponent<RectTransform>();
-        questionPosition = znak.GetChild(0).GetComponent<RectTransform>();
-        watPosition = znak.GetChild(1).GetComponent<RectTransform>();
-        startHeightQuestion = questionPosition.sizeDelta;
-        startHeightWat = watPosition.sizeDelta;
+        questionPosition = znak.GetChild(0);
+        watPosition = znak.GetChild(1);
+        startHeightQuestion = questionPosition.localScale;
+        startHeightWat = watPosition.localScale;
         
-        durationY = screenPositions.position.y - Camera.main.WorldToScreenPoint(victim.position).y;
         anim = animGameObject.GetComponent<Animator>();
         animMurder = game.murder.transform.GetChild(0).GetComponent<Animator>();
     }
@@ -106,12 +104,10 @@ public class VictimController : GameSystem, IIniting
     private void Znak()
     {
         znak.GetChild(0).gameObject.SetActive(true);
-        Vector3 znakPose = Camera.main.WorldToScreenPoint(victim.position);
-        znakPose.y += durationY;
-        screenPositions.position = znakPose;
+       
         //znak.DOScaleY(0.6f, timeFear).SetEase(Ease.OutBounce).OnComplete(SeeBackward);
-        questionPosition.sizeDelta = Vector2.zero;
-        questionPosition.DOSizeDelta(startHeightQuestion, timeFear).SetEase(Ease.OutBounce).OnComplete(SeeBackward);
+        questionPosition.localScale = Vector2.zero;
+        questionPosition.DOScale(startHeightQuestion, timeFear).SetEase(Ease.OutBounce).OnComplete(SeeBackward);
     }
     
 
@@ -120,13 +116,13 @@ public class VictimController : GameSystem, IIniting
         znak.GetChild(0).gameObject.SetActive(false);
         Vector3 newRotate = new Vector3(0, 180, 0);
         znak.GetChild(1).gameObject.SetActive(true);
-        watPosition.DOSizeDelta(startHeightWat, timeFear).SetEase(Ease.OutBounce).OnComplete(OffZnaks);
+        watPosition.DOScale(startHeightWat, timeFear).SetEase(Ease.OutBounce).OnComplete(OffZnaks);
         victim.DORotate(-newRotate, 0.4f).OnComplete(AnimationSee);
     }
 
     private void AnimationSee()
     {
-        watPosition.sizeDelta = Vector2.zero;
+        watPosition.localScale = Vector2.zero;
         game.seeBackward = true;
         Vector3 eyePos = eyes[0].localPosition;
         eyePos.x = 0.05f;
