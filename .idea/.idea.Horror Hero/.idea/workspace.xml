@@ -131,7 +131,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/GameState/MurderController.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="680">
-              <caret line="78" column="13" lean-forward="true" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+              <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
               <folding>
                 <marker date="1622649414764" expanded="false" signature="6:215" ph="..." />
                 <marker date="1622649414764" expanded="true" signature="280:3555" ph="{...}" />
@@ -297,7 +297,7 @@
       <path value="$PROJECT_DIR$/Assets/NaughtyAttributes/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="854" />
     <option name="width" value="1074" />
     <option name="height" value="1056" />
@@ -497,7 +497,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110880000" />
+    <option name="totallyTimeSpent" value="111474000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -938,7 +938,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/GameState/MurderController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
-          <caret line="78" column="13" lean-forward="true" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+          <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
           <folding>
             <marker date="1622649414764" expanded="false" signature="6:215" ph="..." />
             <marker date="1622649414764" expanded="true" signature="280:3555" ph="{...}" />
