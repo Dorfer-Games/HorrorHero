@@ -59,7 +59,7 @@ public class MurderController : GameSystem, IIniting, IUpdating
                 game.murder.transform.GetChild(1).gameObject.SetActive(false);
                 anim.SetFloat("Run", victimAgent.speed);
                 murderCollider.enabled = game.masking;
-                game.murder.transform.GetChild(0).gameObject.SetActive(true);
+                game.murder.transform.GetChild(0).DOScale(Vector3.one, 0.45f);
             }
 
             murderPos.x = (xPosition - 0.5f) * maxX / 0.5f;
@@ -68,7 +68,7 @@ public class MurderController : GameSystem, IIniting, IUpdating
 
             if (currentdistance > previeDistance)
             {
-                currentdistance -= 0.05f;
+                currentdistance -= 0.1f;
                 anim.SetFloat("Speed", otherSpeed);
             }
             else
@@ -88,7 +88,7 @@ public class MurderController : GameSystem, IIniting, IUpdating
                 exactle = false;
                 nornalSpeed = anim.GetFloat("Speed");
                 otherSpeed = nornalSpeed * 2;
-                game.murder.transform.GetChild(0).gameObject.SetActive(false);
+                game.murder.transform.GetChild(0).DOScale(Vector3.zero, 0.45f);
             }
            game.murder.transform.GetChild(1).gameObject.SetActive(true);
             currentdistance = game.victim.transform.position.z - game.murder.transform.position.z;
