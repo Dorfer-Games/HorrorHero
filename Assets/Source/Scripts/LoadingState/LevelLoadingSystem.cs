@@ -24,6 +24,5 @@ public class LevelLoadingSystem : GameSystem, IIniting
         game.fearBar = GameObject.FindWithTag("Fear").GetComponent<Scrollbar>();
         game.finish = GameObject.FindWithTag("EndLevel");
         game.light = GameObject.FindWithTag("LightCatScene");
-        game.light.SetActive(false);
     }
 }
