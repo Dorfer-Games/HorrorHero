@@ -27,6 +27,9 @@ public class MurderController : GameSystem, IIniting, IUpdating
     private float previeDistance;
     private float currentdistance;
 
+    private float otherSpeed;
+    private float nornalSpeed;
+
     void IIniting.OnInit()
     {
         murderCollider = game.murder.GetComponent<Collider>();
@@ -36,6 +39,9 @@ public class MurderController : GameSystem, IIniting, IUpdating
         victimAgent = game.victimGhost.GetComponent<NavMeshAgent>();
         previeDistance = 3;
         currentdistance = previeDistance;
+        nornalSpeed = anim.GetFloat("Speed");
+        otherSpeed = nornalSpeed * 2;
+        game.murder.transform.GetChild(1).gameObject.SetActive(false);
     }
 
     void IUpdating.OnUpdate()
@@ -53,7 +59,7 @@ public class MurderController : GameSystem, IIniting, IUpdating
                 game.murder.transform.GetChild(1).gameObject.SetActive(false);
                 anim.SetFloat("Run", victimAgent.speed);
                 murderCollider.enabled = game.masking;
-                game.murder.transform.GetChild(0).DOScale(Vector3.one, 0.45f).SetEase(Ease.OutBounce);
+                game.murder.transform.GetChild(0).gameObject.SetActive(true);
             }
 
             murderPos.x = (xPosition - 0.5f) * maxX / 0.5f;
@@ -63,12 +69,12 @@ public class MurderController : GameSystem, IIniting, IUpdating
             if (currentdistance > previeDistance)
             {
                 currentdistance -= 0.05f;
-                anim.speed *= 2;
+                anim.SetFloat("Speed", otherSpeed);
             }
             else
             {
                 currentdistance = previeDistance;
-                anim.speed = 1;
+                anim.SetFloat("Speed", nornalSpeed);
 
             }
 
@@ -80,9 +86,11 @@ public class MurderController : GameSystem, IIniting, IUpdating
                 murderPos = game.murder.transform.position;
                 murderCollider.enabled = game.masking;
                 exactle = false;
-                game.murder.transform.GetChild(1).gameObject.SetActive(true);
-                game.murder.transform.GetChild(0).DOScale(Vector3.zero, 0.45f).SetEase(Ease.OutBounce);
+                nornalSpeed = anim.GetFloat("Speed");
+                otherSpeed = nornalSpeed * 2;
+                game.murder.transform.GetChild(0).gameObject.SetActive(false);
             }
+           game.murder.transform.GetChild(1).gameObject.SetActive(true);
             currentdistance = game.victim.transform.position.z - game.murder.transform.position.z;
             game.murder.transform.position = murderPos;
             Vector3 posBone = objectBone.position;

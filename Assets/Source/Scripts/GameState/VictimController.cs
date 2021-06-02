@@ -24,7 +24,6 @@ public class VictimController : GameSystem, IIniting
 
     private Vector3 distance;
     private NavMeshAgent victimNavMeshAgent;
-    private Transform screenPositions;
     private Transform questionPosition;
     private Transform watPosition;
 
@@ -44,7 +43,6 @@ public class VictimController : GameSystem, IIniting
         znak.GetChild(0).gameObject.SetActive(false);
         znak.GetChild(1).gameObject.SetActive(false);
         
-        screenPositions = znak.GetComponent<RectTransform>();
         questionPosition = znak.GetChild(0);
         watPosition = znak.GetChild(1);
         startHeightQuestion = questionPosition.localScale;
