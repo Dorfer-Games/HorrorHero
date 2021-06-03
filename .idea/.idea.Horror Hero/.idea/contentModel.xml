@@ -381,6 +381,12 @@
             </e>
           </e>
         </e>
+        <e p="Vibration" t="Include">
+          <e p="Example" t="Include">
+            <e p="VibrationExample.cs" t="Include" />
+          </e>
+          <e p="Vibration.cs" t="Include" />
+        </e>
       </e>
       <e p="Horror Hero.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />

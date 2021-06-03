@@ -41,6 +41,7 @@ public class GASController : GameSystem, IIniting, IUpdating
     void EndRotate()
     {
         t = true;
+        Vibration.VibrateNope();
         //Vector3 newRotate = new Vector3(0, angle, 0);
         //game.victim.transform.DORotate(newRotate, 0.25f);
 
