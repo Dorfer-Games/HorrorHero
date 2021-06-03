@@ -13,7 +13,7 @@ public class SoundObject : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.transform.tag != "Floor")
+        if (other.transform.tag != "Floor" && other.transform.tag != "Victim")
         {
             sound.Play();
         }

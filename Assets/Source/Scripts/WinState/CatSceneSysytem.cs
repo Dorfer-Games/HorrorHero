@@ -17,11 +17,9 @@ public class CatSceneSysytem : GameSystem, IIniting, IUpdating
           game.murder.transform.DOScale(Vector3.one, 0.1f).SetEase(Ease.OutBounce);
           cam = Camera.main;
           pos = new Vector3(-0.9f, 6.1f, 126.5f);
-          //game.light.SetActive(true);
-          Vector3 rot = new Vector3(9f, 0,0);
           Vector3 posVictim = game.victim.transform.position;
-          posVictim.z -= 1.5f;
-          game.murder.transform.DOMove(posVictim, 0.5f);
+          posVictim.z -= 2f;
+          Vector3 rot = new Vector3(9f, 0,0);
           cam.transform.DOMove(pos, 3f);
           cam.transform.DORotate(rot, 3f);
           gameCoordinats.DOMoveX(13, 6f).OnComplete(EndRotate);
@@ -31,11 +29,7 @@ public class CatSceneSysytem : GameSystem, IIniting, IUpdating
           Vector3 newRotate = new Vector3(0, 180, 0);
           game.victim.transform.DORotate(-newRotate, 0.25f);
           game.masking = true;
-
-          Animator anim = game.victim.transform.GetChild(0).GetComponent<Animator>();
-          Animator animMurder = game.murder.transform.GetChild(0).GetComponent<Animator>();
-          anim.SetBool("Win", true);
-          animMurder.SetBool("Win", true);
+          game.murder.transform.DOMove(posVictim, 0.5f).OnComplete(EndMurderPosition); /*После перемещения запускаем анимации*/
      }
 
      void EndRotate()
@@ -48,5 +42,13 @@ public class CatSceneSysytem : GameSystem, IIniting, IUpdating
      {
           light.intensity = gameCoordinats.position.x;
           
+     }
+
+     void EndMurderPosition()
+     {
+          Animator anim = game.victim.transform.GetChild(0).GetComponent<Animator>();
+          Animator animMurder = game.murder.transform.GetChild(0).GetComponent<Animator>();
+          anim.SetBool("Win", true);
+          animMurder.SetBool("Win", true);
      }
 }
