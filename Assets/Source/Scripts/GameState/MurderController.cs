@@ -8,7 +8,7 @@ using UnityEngine.AI;
 using UnityEngine.UI;
 using Vector3 = UnityEngine.Vector3;
 
-public class MurderController : GameSystem, IIniting, IUpdating
+public class MurderController : GameSystem, IIniting
 {
     [SerializeField] private Scrollbar controller;
     [SerializeField] private float maxX;
@@ -44,11 +44,23 @@ public class MurderController : GameSystem, IIniting, IUpdating
         game.murder.transform.GetChild(1).gameObject.SetActive(false);
     }
 
-    void IUpdating.OnUpdate()
+    void FixedUpdate()
     {
-        //murderMesh.enabled = game.masking;
+        if (Bootstrap.GetCurrentGamestate() == EGamestate.Game)
+        {
+            Game();
+        }
 
-        if (game.masking)
+        if (Bootstrap.GetCurrentGamestate() == EGamestate.Win)
+        {
+            game.murder.transform.GetChild(1).gameObject.SetActive(false);
+            game.murder.transform.GetChild(0).DOScale(Vector3.one, 0.45f);
+        }
+    }
+
+    private void Game()
+    {
+         if (game.masking)
         {
             murderPos = game.murder.transform.position;
             xPosition = controller.value;
@@ -107,7 +119,6 @@ public class MurderController : GameSystem, IIniting, IUpdating
             posBone.x = game.victim.transform.position.x;
             objectBone.position = posBone;
         }
-
     }
 }
 
