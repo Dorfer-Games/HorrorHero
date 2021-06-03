@@ -332,6 +332,7 @@
               <e p="ButtonClickRetry.cs" t="Include" />
               <e p="EndLevel.cs" t="Include" />
               <e p="Murder.cs" t="Include" />
+              <e p="SoundObject.cs" t="Include" />
             </e>
             <e p="GameState" t="Include">
               <e p="FearController.cs" t="Include" />
