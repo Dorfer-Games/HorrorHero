@@ -28,8 +28,13 @@ public class CatSceneSysytem : GameSystem, IIniting, IUpdating
           Vector3 newRotate = new Vector3(0, 180, 0);
           game.victim.transform.DORotate(-newRotate, 0.25f);
           game.masking = true;
-          float distance = game.victim.transform.position.z - game.murder.transform.position.z;
+          float distance = game.murder.transform.position.z - game.victim.transform.position.z;
           game.murder.transform.DOMove(posVictim, distance).OnComplete(EndMurderPosition); 
+          
+          Animator anim = game.victim.transform.GetChild(0).GetComponent<Animator>();
+          Animator animMurder = game.murder.transform.GetChild(0).GetComponent<Animator>();
+          anim.SetBool("Win", true);
+          animMurder.SetBool("Win", true);
      }
 
      void EndRotate()
@@ -48,9 +53,5 @@ public class CatSceneSysytem : GameSystem, IIniting, IUpdating
      {
           game.murder.transform.GetChild(1).gameObject.SetActive(false);
           game.murder.transform.GetChild(0).DOScale(Vector3.one, 0.1f).SetEase(Ease.OutBounce);
-          Animator anim = game.victim.transform.GetChild(0).GetComponent<Animator>();
-          Animator animMurder = game.murder.transform.GetChild(0).GetComponent<Animator>();
-          anim.SetBool("Win", true);
-          animMurder.SetBool("Win", true);
      }
 }

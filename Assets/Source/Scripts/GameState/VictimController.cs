@@ -5,7 +5,7 @@ using Kuhpik;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class VictimController : GameSystem, IIniting, IUpdating
+public class VictimController : GameSystem, IIniting
 {
     [SerializeField] private float time;
     [SerializeField] private Transform znak;
@@ -19,7 +19,7 @@ public class VictimController : GameSystem, IIniting, IUpdating
     
     [SerializeField] private float timeWait;
 
-    private float currentTime;
+    public float currentTime;
 
     private bool ooops;
 
@@ -61,34 +61,37 @@ public class VictimController : GameSystem, IIniting, IUpdating
         currentTime = 0;
     }
 
-    void IUpdating.OnUpdate()
+    void FixedUpdate()
     {
-        if (currentTime > 0)
+        if (Bootstrap.GetCurrentGamestate() == EGamestate.Game)
         {
-            currentTime -= 0.1f;
-        }
-        else
-        {
-            ooops = true;
-        }
-        if (time > 0 && !murderScript.colissionBool())
-        {
-            time -= 0.1f;
-            Vector3 newPos = victimNavMeshAgent.transform.position;
-            newPos.y = victim.transform.position.y;
-            victim.transform.position = newPos;
-            victim.transform.rotation = victimNavMeshAgent.transform.rotation;
-        }
-        else
-        {
-            if (victimNavMeshAgent.enabled && ooops)
+            if (currentTime > 0)
             {
-                time = 0;
-                game.fear = true;
-                anim.SetBool("SeeBackward", true);
-                victimNavMeshAgent.enabled = false;
-                ooops = false;
-                Znak();
+                currentTime -= 1f;
+            }
+            else
+            {
+                ooops = true;
+            }
+            if (time > 0 && !murderScript.colissionBool())
+            {
+                time -= 0.1f;
+                Vector3 newPos = victimNavMeshAgent.transform.position;
+                newPos.y = victim.transform.position.y;
+                victim.transform.position = newPos;
+                victim.transform.rotation = victimNavMeshAgent.transform.rotation;
+            }
+            else
+            {
+                if (victimNavMeshAgent.enabled && ooops)
+                {
+                    time = 0;
+                    game.fear = true;
+                    anim.SetBool("SeeBackward", true);
+                    victimNavMeshAgent.enabled = false;
+                    ooops = false;
+                    Znak();
+                }
             }
         }
     }
@@ -161,5 +164,6 @@ public class VictimController : GameSystem, IIniting, IUpdating
         time = startTime;
         victimNavMeshAgent.SetDestination(game.finish.transform.position);
         currentTime = timeWait;
+        ooops = false;
     }
 }

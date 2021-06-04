@@ -839,7 +839,8 @@ MonoBehaviour:
   - {fileID: 123795367}
   firstStepAnim: 5
   secondStepAnim: 8
-  timeWait: 38
+  timeWait: 120
+  currentTime: 0
 --- !u!1 &437046029
 GameObject:
   m_ObjectHideFlags: 0
