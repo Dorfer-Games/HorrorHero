@@ -1,10 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using DG.Tweening;
 using Kuhpik;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class VictimController : GameSystem, IIniting
+public class VictimController : GameSystem, IIniting, IUpdating
 {
     [SerializeField] private float time;
     [SerializeField] private Transform znak;
@@ -15,6 +16,10 @@ public class VictimController : GameSystem, IIniting
 
     [SerializeField] private float firstStepAnim;
     [SerializeField] private float secondStepAnim;
+    
+    [SerializeField] private float timeWait;
+
+    private bool ooops;
 
     private float startTime;
     private Murder murderScript;
@@ -50,33 +55,29 @@ public class VictimController : GameSystem, IIniting
         
         anim = animGameObject.GetComponent<Animator>();
         animMurder = game.murder.transform.GetChild(0).GetComponent<Animator>();
+        ooops = true;
     }
 
-    void FixedUpdate()
+    void IUpdating.OnUpdate()
     {
-        if (Bootstrap.GetCurrentGamestate() == EGamestate.Game)
+        if (time > 0 && !murderScript.colissionBool())
         {
-            if (time > 0 && !murderScript.colissionBool())
+            time -= 0.1f;
+            Vector3 newPos = victimNavMeshAgent.transform.position;
+            newPos.y = victim.transform.position.y;
+            victim.transform.position = newPos;
+            victim.transform.rotation = victimNavMeshAgent.transform.rotation;
+        }
+        else
+        {
+            if (victimNavMeshAgent.enabled && ooops)
             {
-                time -= 0.1f;
-                Vector3 newPos = victimNavMeshAgent.transform.position;
-                newPos.y = victim.transform.position.y;
-                victim.transform.position = newPos;
-                /*Vector3 rotate = victimNavMeshAgent.transform.rotation.eulerAngles;
-                rotate.y *= 10;
-                victim.transform.rotation = Quaternion.Euler(rotate);*/
-                victim.transform.rotation = victimNavMeshAgent.transform.rotation;
-            }
-            else
-            {
-                if (victimNavMeshAgent.enabled)
-                {
-                    time = 0;
-                    game.fear = true;
-                    anim.SetBool("SeeBackward", true);
-                    victimNavMeshAgent.enabled = false;
-                    Znak();
-                }
+                time = 0;
+                game.fear = true;
+                anim.SetBool("SeeBackward", true);
+                victimNavMeshAgent.enabled = false;
+                ooops = false;
+                Znak();
             }
         }
     }
@@ -84,6 +85,17 @@ public class VictimController : GameSystem, IIniting
     private void Znak()
     {
         znak.GetChild(0).gameObject.SetActive(true);
+        
+        if (victimNavMeshAgent.speed == firstStepAnim || victimNavMeshAgent.speed == secondStepAnim)
+        {
+            anim.SetFloat("Speed", 1);
+            animMurder.SetFloat("Speed", 1);
+        }
+        else
+        {
+            anim.SetFloat("Speed", anim.GetFloat("Speed") +0.5f);
+            animMurder.SetFloat("Speed", anim.GetFloat("Speed") +0.5f);
+        }
        
         //znak.DOScaleY(0.6f, timeFear).SetEase(Ease.OutBounce).OnComplete(SeeBackward);
         questionPosition.localScale = Vector2.zero;
@@ -126,17 +138,6 @@ public class VictimController : GameSystem, IIniting
         game.seeBackward = false;
         victimNavMeshAgent.speed += 1.5f;
         
-        if (victimNavMeshAgent.speed == firstStepAnim || victimNavMeshAgent.speed == secondStepAnim)
-        {
-            anim.SetFloat("Speed", 1);
-            animMurder.SetFloat("Speed", 1);
-        }
-        else
-        {
-            anim.SetFloat("Speed", anim.GetFloat("Speed") +0.5f);
-            animMurder.SetFloat("Speed", anim.GetFloat("Speed") +0.5f);
-        }
-        
         anim.SetBool("SeeBackward", false);
         anim.SetFloat("Run", victimNavMeshAgent.speed);
        
@@ -148,5 +149,13 @@ public class VictimController : GameSystem, IIniting
         victimNavMeshAgent.enabled = true;
         time = startTime;
         victimNavMeshAgent.SetDestination(game.finish.transform.position);
+        StartCoroutine(Example());
+    }
+
+    private IEnumerator Example()
+    {
+        yield return new WaitForSecondsRealtime(timeWait);
+        ooops = true;
+
     }
 }

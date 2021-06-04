@@ -13,8 +13,13 @@ public class GASController : GameSystem, IIniting, IUpdating
     private float newAngle;
     private bool t;
 
+    private Vector3 murderPos;
+
     void IIniting.OnInit()
     {
+        murderPos = game.murder.transform.position;
+        game.murder.transform.GetChild(1).gameObject.SetActive(false);
+        game.murder.transform.GetChild(0).DOScale(Vector3.one, 0.45f);
         gas.SetActive(true);
         game.masking = true;
         Animator anim = game.victim.transform.GetChild(0).GetComponent<Animator>();
@@ -27,6 +32,7 @@ public class GASController : GameSystem, IIniting, IUpdating
         Vector3 targetDir = game.murder.transform.position - game.victim.transform.position;
         Vector3 forw = game.victim.transform.forward;
 
+        game.victim.transform.rotation = Quaternion.Euler(Vector3.zero);
         angle = Vector3.SignedAngle(targetDir, forw, Vector3.up);
         
         newAngle = -180 - angle;
@@ -52,6 +58,7 @@ public class GASController : GameSystem, IIniting, IUpdating
         if (t)
         {
             game.victim.transform.rotation = Quaternion.Euler(new Vector3(0, newAngle, 0));
+            game.murder.transform.position = murderPos;
         }
     }
     

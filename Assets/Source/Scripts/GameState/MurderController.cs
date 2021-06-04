@@ -8,11 +8,12 @@ using UnityEngine.AI;
 using UnityEngine.UI;
 using Vector3 = UnityEngine.Vector3;
 
-public class MurderController : GameSystem, IIniting
+public class MurderController : GameSystem, IIniting, IUpdating
 {
     [SerializeField] private Scrollbar controller;
     [SerializeField] private float maxX;
     [SerializeField] private GameObject animGameObject;
+    [SerializeField] private Animator victimAnim;
     [SerializeField] private Transform objectBone;
     
     private float xPosition;
@@ -44,24 +45,10 @@ public class MurderController : GameSystem, IIniting
         game.murder.transform.GetChild(1).gameObject.SetActive(false);
     }
 
-    void FixedUpdate()
+    void IUpdating.OnUpdate()
     {
-        if (Bootstrap.GetCurrentGamestate() == EGamestate.Game)
-        {
-            Game();
-        }
-
-        if (Bootstrap.GetCurrentGamestate() == EGamestate.Win)
-        {
-            game.murder.transform.GetChild(1).gameObject.SetActive(false);
-            game.murder.transform.GetChild(0).DOScale(Vector3.one, 0.45f);
-        }
-    }
-
-    private void Game()
-    {
-         if (game.masking)
-        {
+        if (game.masking)
+         {
             murderPos = game.murder.transform.position;
             xPosition = controller.value;
             
@@ -80,7 +67,7 @@ public class MurderController : GameSystem, IIniting
 
             if (currentdistance > previeDistance)
             {
-                currentdistance -= 0.1f;
+                currentdistance -= 0.07f;
                 anim.SetFloat("Speed", otherSpeed);
             }
             else
@@ -90,25 +77,25 @@ public class MurderController : GameSystem, IIniting
 
             }
 
-            if (!victimAgent.enabled)
-            {
-                anim.SetBool("Stop", true);
-            }
-            else
+            if (victimAgent.enabled)
             {
                 anim.SetBool("Stop", false);
             }
-
-        }
-        else
-        {
+            else
+            {
+                anim.SetBool("Stop", true);
+            }
+             
+         }
+         else
+         {
             if (exactle)
             {
                 murderPos = game.murder.transform.position;
                 murderCollider.enabled = game.masking;
                 exactle = false;
-                nornalSpeed = anim.GetFloat("Speed");
-                otherSpeed = nornalSpeed * 2;
+                nornalSpeed = victimAnim.GetFloat("Speed");
+                otherSpeed = nornalSpeed * 1.5f;
                 game.murder.transform.GetChild(0).DOScale(Vector3.zero, 0.45f);
             }
            game.murder.transform.GetChild(1).gameObject.SetActive(true);
@@ -118,7 +105,7 @@ public class MurderController : GameSystem, IIniting
             posBone.z = game.victim.transform.position.z - 1.8f;
             posBone.x = game.victim.transform.position.x;
             objectBone.position = posBone;
-        }
+         }
     }
 }
 
