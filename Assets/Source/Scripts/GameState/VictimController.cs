@@ -19,6 +19,8 @@ public class VictimController : GameSystem, IIniting, IUpdating
     
     [SerializeField] private float timeWait;
 
+    private float currentTime;
+
     private bool ooops;
 
     private float startTime;
@@ -56,10 +58,19 @@ public class VictimController : GameSystem, IIniting, IUpdating
         anim = animGameObject.GetComponent<Animator>();
         animMurder = game.murder.transform.GetChild(0).GetComponent<Animator>();
         ooops = true;
+        currentTime = 0;
     }
 
     void IUpdating.OnUpdate()
     {
+        if (currentTime > 0)
+        {
+            currentTime -= 0.1f;
+        }
+        else
+        {
+            ooops = true;
+        }
         if (time > 0 && !murderScript.colissionBool())
         {
             time -= 0.1f;
@@ -149,13 +160,6 @@ public class VictimController : GameSystem, IIniting, IUpdating
         victimNavMeshAgent.enabled = true;
         time = startTime;
         victimNavMeshAgent.SetDestination(game.finish.transform.position);
-        StartCoroutine(Example());
-    }
-
-    private IEnumerator Example()
-    {
-        yield return new WaitForSecondsRealtime(timeWait);
-        ooops = true;
-
+        currentTime = timeWait;
     }
 }
