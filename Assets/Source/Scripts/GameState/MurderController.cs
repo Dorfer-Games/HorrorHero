@@ -55,7 +55,7 @@ public class MurderController : GameSystem, IIniting, IUpdating
             Vibration.Vibrate(40);
         }
 
-        if (murderScript.RotateBool())
+        if (murderScript.RotateBool() && victimAgent.enabled)
         {
             game.murder.transform.rotation = game.victim.transform.rotation;
         }
