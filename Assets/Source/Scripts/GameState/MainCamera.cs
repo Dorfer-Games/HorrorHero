@@ -10,11 +10,12 @@ public class MainCamera : GameSystem, IIniting, IUpdating
 {
     [SerializeField] private Camera cam;
 
-    private Vector3 rotate;
+    private Quaternion rotate;
+    public float t;
 
     void IIniting.OnInit()
     {
-        rotate = cam.transform.rotation.eulerAngles;
+        rotate = cam.transform.rotation;
     }
     // Update is called once per frame
    void IUpdating.OnUpdate()
@@ -23,8 +24,8 @@ public class MainCamera : GameSystem, IIniting, IUpdating
         pos.z = game.murder.transform.position.z - 7;
         cam.transform.position = pos;
 
-        rotate.y = game.murder.transform.rotation.eulerAngles.y/10;
-        cam.transform.rotation = Quaternion.Euler(rotate);
-
+        t = game.murder.transform.rotation.y;
+        rotate.y = t/10;
+        cam.transform.rotation = rotate;
     }
 }
