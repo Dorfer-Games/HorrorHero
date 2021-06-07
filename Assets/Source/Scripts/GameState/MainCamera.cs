@@ -24,9 +24,7 @@ public class MainCamera : GameSystem, IIniting, IUpdating
         cam.transform.position = pos;
 
         rotate.y = game.murder.transform.rotation.eulerAngles.y;
-        cam.transform.rotation = Quaternion.Euler(rotate); /**/
-        //Vector3 targetPosition = murder.TransformPoint(new Vector3(0, 6, -7));
-        //transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+        cam.transform.rotation = Quaternion.Euler(rotate);
 
     }
 }
