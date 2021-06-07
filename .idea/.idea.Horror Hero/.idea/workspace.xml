@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc4f9fc-f7f3-40c6-b50f-64abc3b1b0e6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/GameState/VictimController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Scripts/GameState/VictimController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/WinState/CatSceneSysytem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Scripts/WinState/CatSceneSysytem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Lose/GASController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Scripts/Lose/GASController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Toon City/Prefabs/Props/Trash_Bag_2A.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Toon City/Prefabs/Props/Trash_Bag_2A.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Toon City/Prefabs/Props/Trash_Can_1B.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Toon City/Prefabs/Props/Trash_Can_1B.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Toon City/Prefabs/Roads/Traffic_Cone_1A.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Toon City/Prefabs/Roads/Traffic_Cone_1A.prefab.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,12 +41,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="12003" />
+          <entry key="cs" value="12069" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="12003" />
+          <entry key="C#" value="12069" />
         </counts>
       </usages-collector>
     </session>
@@ -190,30 +195,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/Lose/GASController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="612">
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
               <folding>
-                <marker date="1622795097742" expanded="false" signature="7:65" ph="..." />
-                <marker date="1622795097742" expanded="true" signature="127:2057" ph="{...}" />
-                <marker date="1622795097742" expanded="true" signature="308:1617" ph="{...}" />
-                <marker date="1622795097742" expanded="true" signature="1343:1611" ph="/* game.victim.transform.DORotate(-newRotate, 0.25f).OnComplete(EndRotate); ... */" />
-                <marker date="1622795097742" expanded="true" signature="1639:1819" ph="{...}" />
-                <marker date="1622795097742" expanded="true" signature="1705:1812" ph="/* Vector3 newRotate = new Vector3(0, angle, 0); ... */" />
-                <marker date="1622795097742" expanded="true" signature="1850:2045" ph="{...}" />
-                <marker date="1622795097742" expanded="true" signature="1871:2039" ph="{...}" />
+                <marker date="1622808469531" expanded="false" signature="7:65" ph="..." />
+                <marker date="1622808469531" expanded="true" signature="127:2196" ph="{...}" />
+                <marker date="1622808469531" expanded="true" signature="339:1700" ph="{...}" />
+                <marker date="1622808469531" expanded="true" signature="1426:1694" ph="/* game.victim.transform.DORotate(-newRotate, 0.25f).OnComplete(EndRotate); ... */" />
+                <marker date="1622808469531" expanded="true" signature="1722:1902" ph="{...}" />
+                <marker date="1622808469531" expanded="true" signature="1788:1895" ph="/* Vector3 newRotate = new Vector3(0, angle, 0); ... */" />
+                <marker date="1622808469531" expanded="true" signature="1933:2184" ph="{...}" />
+                <marker date="1622808469531" expanded="true" signature="1954:2178" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/WinState/CatSceneSysytem.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="18" column="61" lean-forward="true" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+              <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
               <folding>
                 <marker date="1622807084037" expanded="false" signature="6:111" ph="..." />
                 <marker date="1622807084037" expanded="true" signature="175:1900" ph="{...}" />
@@ -293,10 +298,10 @@
         <option value="$PROJECT_DIR$/Assets/Source/Scripts/LoadingState/LevelLoadingSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Source/Scripts/Components/Murder.cs" />
         <option value="$PROJECT_DIR$/Assets/Source/Scripts/Components/SoundObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Source/Scripts/Lose/GASController.cs" />
         <option value="$PROJECT_DIR$/Assets/Source/Scripts/GameState/MurderController.cs" />
         <option value="$PROJECT_DIR$/Assets/Source/Scripts/GameState/VictimController.cs" />
         <option value="$PROJECT_DIR$/Assets/Source/Scripts/WinState/CatSceneSysytem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Source/Scripts/Lose/GASController.cs" />
       </list>
     </option>
   </component>
@@ -306,7 +311,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="854" />
     <option name="width" value="1074" />
     <option name="height" value="1056" />
@@ -502,12 +507,12 @@
       <workItem from="1621962569558" duration="34006000" />
       <workItem from="1622187807105" duration="21464000" />
       <workItem from="1622446461994" duration="21403000" />
-      <workItem from="1622792806109" duration="11429000" />
+      <workItem from="1622792806109" duration="12105000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133484000" />
+    <option name="totallyTimeSpent" value="134160000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -733,23 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/Lose/GASController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <marker date="1622795097742" expanded="false" signature="7:65" ph="..." />
-            <marker date="1622795097742" expanded="true" signature="127:2057" ph="{...}" />
-            <marker date="1622795097742" expanded="true" signature="308:1617" ph="{...}" />
-            <marker date="1622795097742" expanded="true" signature="1343:1611" ph="/* game.victim.transform.DORotate(-newRotate, 0.25f).OnComplete(EndRotate); ... */" />
-            <marker date="1622795097742" expanded="true" signature="1639:1819" ph="{...}" />
-            <marker date="1622795097742" expanded="true" signature="1705:1812" ph="/* Vector3 newRotate = new Vector3(0, angle, 0); ... */" />
-            <marker date="1622795097742" expanded="true" signature="1850:2045" ph="{...}" />
-            <marker date="1622795097742" expanded="true" signature="1871:2039" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/Components/Murder.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -820,7 +808,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/WinState/CatSceneSysytem.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="18" column="61" lean-forward="true" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
           <folding>
             <marker date="1622807084037" expanded="false" signature="6:111" ph="..." />
             <marker date="1622807084037" expanded="true" signature="175:1900" ph="{...}" />
@@ -828,6 +816,23 @@
             <marker date="1622807084037" expanded="true" signature="1459:1567" ph="{...}" />
             <marker date="1622807084037" expanded="true" signature="1604:1684" ph="{...}" />
             <marker date="1622807084037" expanded="true" signature="1715:1898" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/Lose/GASController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <marker date="1622808469531" expanded="false" signature="7:65" ph="..." />
+            <marker date="1622808469531" expanded="true" signature="127:2196" ph="{...}" />
+            <marker date="1622808469531" expanded="true" signature="339:1700" ph="{...}" />
+            <marker date="1622808469531" expanded="true" signature="1426:1694" ph="/* game.victim.transform.DORotate(-newRotate, 0.25f).OnComplete(EndRotate); ... */" />
+            <marker date="1622808469531" expanded="true" signature="1722:1902" ph="{...}" />
+            <marker date="1622808469531" expanded="true" signature="1788:1895" ph="/* Vector3 newRotate = new Vector3(0, angle, 0); ... */" />
+            <marker date="1622808469531" expanded="true" signature="1933:2184" ph="{...}" />
+            <marker date="1622808469531" expanded="true" signature="1954:2178" ph="{...}" />
           </folding>
         </state>
       </provider>

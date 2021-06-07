@@ -350,6 +350,7 @@
             </e>
             <e p="StartState" t="Include">
               <e p="PressInsication.cs" t="Include" />
+              <e p="SettingsController.cs" t="Include" />
             </e>
             <e p="WinState" t="Include">
               <e p="CatSceneSysytem.cs" t="Include" />

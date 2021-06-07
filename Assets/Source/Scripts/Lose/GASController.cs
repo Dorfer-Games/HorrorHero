@@ -14,10 +14,12 @@ public class GASController : GameSystem, IIniting, IUpdating
     private bool t;
 
     private Vector3 murderPos;
+    private Vector3 victimPos;
 
     void IIniting.OnInit()
     {
         murderPos = game.murder.transform.position;
+        victimPos = game.victim.transform.position;
         game.murder.transform.GetChild(1).gameObject.SetActive(false);
         game.murder.transform.GetChild(0).DOScale(Vector3.one, 0.45f);
         gas.SetActive(true);
@@ -58,6 +60,7 @@ public class GASController : GameSystem, IIniting, IUpdating
         if (t)
         {
             game.victim.transform.rotation = Quaternion.Euler(new Vector3(0, newAngle, 0));
+            game.victim.transform.position = victimPos;
             game.murder.transform.position = murderPos;
         }
     }
