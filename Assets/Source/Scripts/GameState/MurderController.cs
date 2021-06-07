@@ -6,6 +6,7 @@ using Kuhpik;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
+using Quaternion = UnityEngine.Quaternion;
 using Vector3 = UnityEngine.Vector3;
 
 public class MurderController : GameSystem, IIniting, IUpdating
@@ -52,6 +53,15 @@ public class MurderController : GameSystem, IIniting, IUpdating
         if (murderScript.colissionBool() && player.vibration)
         {
             Vibration.Vibrate(40);
+        }
+
+        if (murderScript.RotateBool())
+        {
+            game.murder.transform.rotation = game.victim.transform.rotation;
+        }
+        else
+        {
+            game.murder.transform.DORotate(Vector3.zero, 2f);
         }
         
         if (game.masking)

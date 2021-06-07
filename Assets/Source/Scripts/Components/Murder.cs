@@ -7,6 +7,7 @@ public class Murder : MonoBehaviour
 {
    
     private bool colission;
+    private bool rotate;
     private List<GameObject> colisionTpuched;
 
     private void Start()
@@ -17,10 +18,27 @@ public class Murder : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        //gameStartAction?.Invoke(true);
         if (!other.gameObject.tag.Contains("Floor"))
         {
             colission = true;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag.Contains("Rotate"))
+        {
+            rotate = true;
+            Debug.Log("!!!");
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag.Contains("Rotate"))
+        {
+            rotate = false;
+            Debug.Log("...");
         }
     }
 
@@ -43,5 +61,10 @@ public class Murder : MonoBehaviour
     public bool colissionBool()
     {
         return colission;
+    }
+
+    public bool RotateBool()
+    {
+        return rotate;
     }
 }
