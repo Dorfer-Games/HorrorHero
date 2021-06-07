@@ -23,7 +23,7 @@ public class MainCamera : GameSystem, IIniting, IUpdating
         pos.z = game.murder.transform.position.z - 7;
         cam.transform.position = pos;
 
-        rotate.y = game.murder.transform.rotation.eulerAngles.y;
+        rotate.y = game.murder.transform.rotation.eulerAngles.y/10;
         cam.transform.rotation = Quaternion.Euler(rotate);
 
     }
