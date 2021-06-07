@@ -12,5 +12,10 @@ namespace Kuhpik
         // Example (I use public fields for data, but u free to use properties\methods etc)
         // [BoxGroup("level")] public int level;
         // [BoxGroup("currency")] public int money;
+
+        public bool vibration;
+        public bool sound;
+        public int level;
+
     }
 }

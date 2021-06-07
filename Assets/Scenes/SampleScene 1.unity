@@ -202,7 +202,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 39654527}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2059544230}
+        m_MethodName: SoundOf
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &39654527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -691,7 +702,7 @@ RectTransform:
   m_Children:
   - {fileID: 1084327583}
   m_Father: {fileID: 1152117987}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1022,7 +1033,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 314907766}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2059544230}
+        m_MethodName: VibrationOf
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &314907766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4667,7 +4689,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1381161254}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2059544230}
+        m_MethodName: SettingClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1381161254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4904,7 +4937,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1477023465}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2059544230}
+        m_MethodName: VibrationOn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1477023465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5146,7 +5190,7 @@ RectTransform:
   m_Children:
   - {fileID: 1166695422}
   m_Father: {fileID: 1152117987}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -6932,6 +6976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29ab73fb9efa149a42719d8d5b0c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scroll: {fileID: 127660926}
 --- !u!1 &1978836798
 GameObject:
   m_ObjectHideFlags: 0
@@ -7374,6 +7419,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62a34f936e838774bb74f0bfecfa9b2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SoundHub: {fileID: 743080781}
+  VibrationHub: {fileID: 86430491}
+  soundOff: {fileID: 39654524}
+  soundOn: {fileID: 2101030410}
+  vibrationOn: {fileID: 1477023462}
+  vibrationOff: {fileID: 314907763}
+  distance: 50
 --- !u!1 &2095745645
 GameObject:
   m_ObjectHideFlags: 0
@@ -7618,7 +7670,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2101030413}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2059544230}
+        m_MethodName: SoundOn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2101030413
 MonoBehaviour:
   m_ObjectHideFlags: 0
