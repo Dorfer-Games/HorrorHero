@@ -46,6 +46,7 @@ public class SettingsController : GameSystem, IIniting
         soundOff.SetActive(true);
         soundOn.SetActive(false);
         player.sound = false;
+        mix.SetFloat("Volume", -80);
     }
 
     public void SoundOf()
@@ -53,6 +54,7 @@ public class SettingsController : GameSystem, IIniting
         soundOff.SetActive(false);
         soundOn.SetActive(true);
         player.sound = true;
+        mix.SetFloat("Volume", 0);
     }
 
     public void VibrationOn()
