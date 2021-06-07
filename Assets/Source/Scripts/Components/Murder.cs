@@ -21,7 +21,6 @@ public class Murder : MonoBehaviour
         if (!other.gameObject.tag.Contains("Floor"))
         {
             colission = true;
-            Vibration.Vibrate(40);
         }
     }
 

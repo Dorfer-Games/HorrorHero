@@ -30,6 +30,7 @@ public class MurderController : GameSystem, IIniting, IUpdating
 
     private float otherSpeed;
     private float nornalSpeed;
+    private Murder murderScript;
 
     void IIniting.OnInit()
     {
@@ -43,10 +44,16 @@ public class MurderController : GameSystem, IIniting, IUpdating
         nornalSpeed = anim.GetFloat("Speed");
         otherSpeed = nornalSpeed * 2;
         game.murder.transform.GetChild(1).gameObject.SetActive(false);
+        murderScript = game.murder.GetComponent<Murder>();
     }
 
     void IUpdating.OnUpdate()
     {
+        if (murderScript.colissionBool() && player.vibration)
+        {
+            Vibration.Vibrate(40);
+        }
+        
         if (game.masking)
          {
             murderPos = game.murder.transform.position;

@@ -7426,6 +7426,7 @@ MonoBehaviour:
   vibrationOn: {fileID: 1477023462}
   vibrationOff: {fileID: 314907763}
   distance: 50
+  mix: {fileID: 24100000, guid: 47f5cd47201012243bc2c6d29df21bcb, type: 2}
 --- !u!1 &2095745645
 GameObject:
   m_ObjectHideFlags: 0

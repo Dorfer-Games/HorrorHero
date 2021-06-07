@@ -39,7 +39,10 @@ public class CatSceneSysytem : GameSystem, IIniting, IUpdating
 
      void EndRotate()
      {
-          Vibration.VibratePeek();
+          if (player.vibration)
+          {
+              Vibration.VibratePeek(); 
+          }
           Bootstrap.ChangeGameState(EGamestate.WinScreen);
      }
      

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using Kuhpik;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class SettingsController : GameSystem, IIniting
 {
@@ -15,6 +16,8 @@ public class SettingsController : GameSystem, IIniting
     [SerializeField] private GameObject vibrationOff;
 
     [SerializeField] private float distance;
+
+    [SerializeField] private AudioMixer mix;
 
     private float soundHubAnchorPositionY;
     private float vibrationHubAnchorPositionY;
