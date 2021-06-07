@@ -59,10 +59,6 @@ public class MurderController : GameSystem, IIniting, IUpdating
         {
             game.murder.transform.rotation = game.victim.transform.rotation;
         }
-        else
-        {
-            game.murder.transform.DORotate(Vector3.zero, 2f);
-        }
         
         if (game.masking)
          {
