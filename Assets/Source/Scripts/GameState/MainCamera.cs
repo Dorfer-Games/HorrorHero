@@ -19,11 +19,12 @@ public class MainCamera : GameSystem, IIniting, IUpdating
     // Update is called once per frame
    void IUpdating.OnUpdate()
     {
-        /*Vector3 pos = cam.transform.position;
+        /// для прямых уровней
+       Vector3 pos = cam.transform.position;
         pos.z = game.murder.transform.position.z - 7;
         cam.transform.position = pos;
 
         /*rotate.y = game.murder.transform.rotation.y;
-        cam.transform.rotation = rotate;*/
+        cam.transform.rotation = rotate; /**/
     }
 }

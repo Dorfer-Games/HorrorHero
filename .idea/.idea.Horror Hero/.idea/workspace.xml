@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc4f9fc-f7f3-40c6-b50f-64abc3b1b0e6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level3 Variant.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level3 Variant.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level3.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/WinState/CatSceneSysytem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Scripts/WinState/CatSceneSysytem.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,12 +37,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="15335" />
+          <entry key="cs" value="15404" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="15335" />
+          <entry key="C#" value="15404" />
         </counts>
       </usages-collector>
     </session>
@@ -233,16 +226,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/WinState/CatSceneSysytem.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-140">
-              <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+            <state relative-caret-position="391">
+              <caret line="27" column="57" lean-forward="true" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
               <folding>
-                <marker date="1623243645118" expanded="false" signature="6:111" ph="..." />
-                <marker date="1623243645118" expanded="true" signature="175:2197" ph="{...}" />
-                <marker date="1623243645118" expanded="true" signature="345:1672" ph="{...}" />
-                <marker date="1623243645118" expanded="true" signature="1695:1864" ph="{...}" />
-                <marker date="1623243645118" expanded="true" signature="1734:1798" ph="{...}" />
-                <marker date="1623243645118" expanded="true" signature="1901:1981" ph="{...}" />
-                <marker date="1623243645118" expanded="true" signature="2012:2195" ph="{...}" />
+                <marker date="1623257509243" expanded="false" signature="6:111" ph="..." />
+                <marker date="1623257509243" expanded="true" signature="175:3985" ph="{...}" />
+                <marker date="1623257509243" expanded="true" signature="323:379" ph="/// прямые уровни ... " />
+                <marker date="1623257509243" expanded="true" signature="413:1504" ph="{...}" />
+                <marker date="1623257509243" expanded="true" signature="1527:1697" ph="{...}" />
+                <marker date="1623257509243" expanded="true" signature="1566:1631" ph="{...}" />
+                <marker date="1623257509243" expanded="true" signature="1734:1814" ph="{...}" />
+                <marker date="1623257509243" expanded="true" signature="1845:2028" ph="{...}" />
+                <marker date="1623257509243" expanded="true" signature="2046:2094" ph="/* Уровни крестом ... */" />
+                <marker date="1623257509243" expanded="true" signature="2107:3983" ph="/* void IIniting.OnInit() ... */" />
               </folding>
             </state>
           </provider>
@@ -485,7 +481,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165963000" />
+    <option name="totallyTimeSpent" value="166111000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -818,16 +814,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/WinState/CatSceneSysytem.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140">
-          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+        <state relative-caret-position="391">
+          <caret line="27" column="57" lean-forward="true" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
           <folding>
-            <marker date="1623243645118" expanded="false" signature="6:111" ph="..." />
-            <marker date="1623243645118" expanded="true" signature="175:2197" ph="{...}" />
-            <marker date="1623243645118" expanded="true" signature="345:1672" ph="{...}" />
-            <marker date="1623243645118" expanded="true" signature="1695:1864" ph="{...}" />
-            <marker date="1623243645118" expanded="true" signature="1734:1798" ph="{...}" />
-            <marker date="1623243645118" expanded="true" signature="1901:1981" ph="{...}" />
-            <marker date="1623243645118" expanded="true" signature="2012:2195" ph="{...}" />
+            <marker date="1623257509243" expanded="false" signature="6:111" ph="..." />
+            <marker date="1623257509243" expanded="true" signature="175:3985" ph="{...}" />
+            <marker date="1623257509243" expanded="true" signature="323:379" ph="/// прямые уровни ... " />
+            <marker date="1623257509243" expanded="true" signature="413:1504" ph="{...}" />
+            <marker date="1623257509243" expanded="true" signature="1527:1697" ph="{...}" />
+            <marker date="1623257509243" expanded="true" signature="1566:1631" ph="{...}" />
+            <marker date="1623257509243" expanded="true" signature="1734:1814" ph="{...}" />
+            <marker date="1623257509243" expanded="true" signature="1845:2028" ph="{...}" />
+            <marker date="1623257509243" expanded="true" signature="2046:2094" ph="/* Уровни крестом ... */" />
+            <marker date="1623257509243" expanded="true" signature="2107:3983" ph="/* void IIniting.OnInit() ... */" />
           </folding>
         </state>
       </provider>
