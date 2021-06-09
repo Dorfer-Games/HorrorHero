@@ -16,8 +16,15 @@ public class CatSceneSysytem : GameSystem, IIniting, IUpdating
      {
           cam = Camera.main;
           pos = new Vector3(-0.9f, 6.1f, -4.8f);
-          Vector3 posVictim = game.victim.transform.position;
+          Vector3 posVictim = game.murder.transform.parent.localPosition;
           posVictim.z -= 2f;
+          GameObject g = new GameObject();
+          g.transform.SetParent(game.murder.transform.parent);
+          g.transform.localPosition = posVictim;
+
+          posVictim = g.transform.position;
+          posVictim.y = game.murder.transform.position.y;
+          
           Vector3 rot = new Vector3(9f, 0 ,0);
           cam.transform.DOLocalMove(pos, 3f);
           cam.transform.DOLocalRotate(rot, 3f);
