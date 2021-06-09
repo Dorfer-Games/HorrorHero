@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc4f9fc-f7f3-40c6-b50f-64abc3b1b0e6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level3 Variant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level3 Variant.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Resources/Levels/Level3.prefab.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -227,8 +233,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/WinState/CatSceneSysytem.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+            <state relative-caret-position="-140">
+              <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
               <folding>
                 <marker date="1623243645118" expanded="false" signature="6:111" ph="..." />
                 <marker date="1623243645118" expanded="true" signature="175:2197" ph="{...}" />
@@ -311,7 +317,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="1280" />
     <option name="height" value="1047" />
@@ -479,7 +485,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165956000" />
+    <option name="totallyTimeSpent" value="165963000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -492,6 +498,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20575693" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -811,8 +818,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Source/Scripts/WinState/CatSceneSysytem.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+        <state relative-caret-position="-140">
+          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
           <folding>
             <marker date="1623243645118" expanded="false" signature="6:111" ph="..." />
             <marker date="1623243645118" expanded="true" signature="175:2197" ph="{...}" />
