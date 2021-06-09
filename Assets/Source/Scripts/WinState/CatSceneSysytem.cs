@@ -15,12 +15,12 @@ public class CatSceneSysytem : GameSystem, IIniting, IUpdating
      void IIniting.OnInit()
      {
           cam = Camera.main;
-          pos = new Vector3(-0.9f, 6.1f, 126.5f);
+          pos = new Vector3(-0.9f, 6.1f, -4.8f);
           Vector3 posVictim = game.victim.transform.position;
           posVictim.z -= 2f;
-          Vector3 rot = new Vector3(9f, 0,0);
-          cam.transform.DOMove(pos, 3f);
-          cam.transform.DORotate(rot, 3f);
+          Vector3 rot = new Vector3(9f, 0 ,0);
+          cam.transform.DOLocalMove(pos, 3f);
+          cam.transform.DOLocalRotate(rot, 3f);
           gameCoordinats.DOMoveX(13, 6f).OnComplete(EndRotate);
           game.light.transform.DOMoveY(0, 3f);
           light = game.light.GetComponent<Light>();

@@ -8,6 +8,7 @@ public class Murder : MonoBehaviour
    
     private bool colission;
     private bool rotate;
+    private Transform town;
     private List<GameObject> colisionTpuched;
 
     private void Start()
@@ -30,6 +31,11 @@ public class Murder : MonoBehaviour
         {
             rotate = true;
             Debug.Log("!!!");
+        }
+
+        if (other.gameObject.tag.Contains("Town"))
+        {
+            town = other.transform;
         }
     }
 
@@ -66,5 +72,10 @@ public class Murder : MonoBehaviour
     public bool RotateBool()
     {
         return rotate;
+    }
+
+    public Transform GetTown()
+    {
+        return town;
     }
 }

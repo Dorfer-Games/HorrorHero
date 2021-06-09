@@ -15,6 +15,7 @@ TagManager:
   - LightCatScene
   - Rotate
   - MainMurder
+  - Town
   layers:
   - Default
   - TransparentFX
@@ -29,8 +30,8 @@ TagManager:
   - Victim
   - Murder
   - Rotate
-  - 
-  - 
+  - VictimGhost
+  - Town
   - 
   - 
   - 

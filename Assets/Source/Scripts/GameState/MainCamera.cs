@@ -11,7 +11,6 @@ public class MainCamera : GameSystem, IIniting, IUpdating
     [SerializeField] private Camera cam;
 
     private Quaternion rotate;
-    public float t;
 
     void IIniting.OnInit()
     {
@@ -20,11 +19,11 @@ public class MainCamera : GameSystem, IIniting, IUpdating
     // Update is called once per frame
    void IUpdating.OnUpdate()
     {
-        Vector3 pos = cam.transform.position;
+        /*Vector3 pos = cam.transform.position;
         pos.z = game.murder.transform.position.z - 7;
         cam.transform.position = pos;
 
-        rotate.y = game.murder.transform.rotation.y;
-        cam.transform.rotation = rotate;
+        /*rotate.y = game.murder.transform.rotation.y;
+        cam.transform.rotation = rotate;*/
     }
 }
