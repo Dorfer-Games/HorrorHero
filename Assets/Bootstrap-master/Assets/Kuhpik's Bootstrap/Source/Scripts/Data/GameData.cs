@@ -15,7 +15,6 @@ namespace Kuhpik
         public bool masking;
         public bool seeBackward;
         public bool fear;
-        public bool setting;
         
         public GameObject light;
 

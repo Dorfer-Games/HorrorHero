@@ -57,20 +57,21 @@ public class TutorialLevel : GameSystem, IIniting, IUpdating
          }
          else
          {
-            if (Input.GetMouseButtonDown(0))
-            {
-               slide.SetActive(true);
-               tap.SetActive(false);
-               Time.timeScale = 1;
-               Time.fixedDeltaTime = time;
-            }
-
             if (Input.GetMouseButtonUp(0))
             {
-               slide.SetActive(false);
-               tap.SetActive(true);
+               slide.SetActive(true);
+               //tap.SetActive(false);
                Time.timeScale = timeDurable;
                Time.fixedDeltaTime = Time.timeScale * 0.02f;
+               
+            }
+
+            if (Input.GetMouseButtonDown(0))
+            {
+               slide.SetActive(false);
+               //tap.SetActive(true);
+               Time.timeScale = 1;
+               Time.fixedDeltaTime = time;
             }
          }
       }
