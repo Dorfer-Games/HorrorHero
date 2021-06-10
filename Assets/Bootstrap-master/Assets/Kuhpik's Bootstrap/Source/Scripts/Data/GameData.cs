@@ -22,5 +22,6 @@ namespace Kuhpik
         public GameObject murder;
         public Scrollbar fearBar;
         public GameObject finish;
+        public GameObject level;
     }
 }

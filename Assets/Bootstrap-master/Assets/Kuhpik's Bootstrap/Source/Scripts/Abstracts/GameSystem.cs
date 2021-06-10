@@ -6,6 +6,6 @@ namespace Kuhpik
     {
         protected PlayerData player;
         protected GameConfig config;
-        protected GameData game;
+        protected GameData game; 
     }
 }

@@ -18,10 +18,21 @@ public class CatSceneSysytem : GameSystem, IIniting, IUpdating
      
      void IIniting.OnInit()
      {
+          game.murder.GetComponent<Collider>().enabled = false;
+          game.victim.GetComponent<Collider>().enabled = false;
+          
+          Rigidbody rbMurder = game.murder.GetComponent<Rigidbody>();
+          Rigidbody rbVictim = game.victim.GetComponent<Rigidbody>();
+
+          
+          rbMurder.constraints = RigidbodyConstraints.FreezeAll;
+          rbVictim.constraints = RigidbodyConstraints.FreezeAll;
+          
           cam = Camera.main;
-          pos = new Vector3(-0.9f, 6.1f, 126.5f);
+          
           Vector3 posVictim = game.victim.transform.position;
           posVictim.z -= 2f;
+          pos = new Vector3(-0.9f, 6.1f, posVictim.z -2f);
           Vector3 rot = new Vector3(9f, 0,0);
           cam.transform.DOMove(pos, 3f);
           cam.transform.DORotate(rot, 3f);
@@ -39,6 +50,8 @@ public class CatSceneSysytem : GameSystem, IIniting, IUpdating
           Animator animMurder = game.murder.transform.GetChild(0).GetComponent<Animator>();
           anim.SetBool("Win", true);
           animMurder.SetBool("Win", true);
+
+          player.level += 1;
      }
 
      void EndRotate()
