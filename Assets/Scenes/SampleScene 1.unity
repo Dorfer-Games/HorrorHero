@@ -6745,7 +6745,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelsPath: Levels\LineLevels\Level{0}
-  maxLevels: 3
+  maxLevels: 4
 --- !u!1 &1920142470
 GameObject:
   m_ObjectHideFlags: 0

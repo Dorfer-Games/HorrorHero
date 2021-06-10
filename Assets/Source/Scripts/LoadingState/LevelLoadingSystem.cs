@@ -11,6 +11,11 @@ public class LevelLoadingSystem : GameSystem, IIniting
     [SerializeField] private int maxLevels;
     void IIniting.OnInit()
     {
+        
+        if (player.level >= maxLevels)
+        {
+            player.level = 0;
+        }
         var level = Mathf.Clamp(player.level, 0, maxLevels - 1);
         var levelGo = Resources.Load<GameObject>(string.Format(levelsPath, level + 1));
        
