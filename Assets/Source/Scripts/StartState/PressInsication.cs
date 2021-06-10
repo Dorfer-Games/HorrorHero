@@ -14,13 +14,15 @@ public class PressInsication : GameSystem, IUpdating, IIniting
     void IIniting.OnInit()
     {
         currentValue = scroll.value;
+        Time.timeScale = 1;
+        game.fear = false;
     }
     
     void IUpdating.OnUpdate()
     {
-        if (!currentValue.Equals(scroll.value))
+        /**/if (!currentValue.Equals(scroll.value) || (Input.GetMouseButtonDown(0) && Input.mousePosition.x > 200))
         {
             Bootstrap.ChangeGameState(EGamestate.Game);
-        }/**/
+        }
     }
 }

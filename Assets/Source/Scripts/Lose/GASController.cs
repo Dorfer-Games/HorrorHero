@@ -18,6 +18,7 @@ public class GASController : GameSystem, IIniting, IUpdating
 
     void IIniting.OnInit()
     {
+        Time.timeScale = 1;
         murderPos = game.murder.transform.position;
         victimPos = game.victim.transform.position;
         game.murder.transform.GetChild(1).gameObject.SetActive(false);

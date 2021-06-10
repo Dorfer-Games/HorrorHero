@@ -39,7 +39,6 @@ public class VictimController : GameSystem, IIniting
     
     void IIniting.OnInit()
     {
-        game.fear = false;
         startTime = time;
         victimNavMeshAgent = game.victimGhost.GetComponent<NavMeshAgent>();
         victimNavMeshAgent.enabled = true;

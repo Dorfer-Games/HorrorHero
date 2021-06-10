@@ -340,6 +340,7 @@
               <e p="InputSystem.cs" t="Include" />
               <e p="MainCamera.cs" t="Include" />
               <e p="MurderController.cs" t="Include" />
+              <e p="TutorialLevel.cs" t="Include" />
               <e p="VictimController.cs" t="Include" />
             </e>
             <e p="LoadingState" t="Include">

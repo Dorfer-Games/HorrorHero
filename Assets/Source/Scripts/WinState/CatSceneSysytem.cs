@@ -18,6 +18,7 @@ public class CatSceneSysytem : GameSystem, IIniting, IUpdating
      
      void IIniting.OnInit()
      {
+          Time.timeScale = 1;
           game.murder.GetComponent<Collider>().enabled = false;
           game.victim.GetComponent<Collider>().enabled = false;
           

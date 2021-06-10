@@ -28,6 +28,7 @@ public class SettingsController : GameSystem, IIniting
     {
         soundHubAnchorPositionY = SoundHub.anchoredPosition.y;
         vibrationHubAnchorPositionY = VibrationHub.anchoredPosition.y;
+        click = false;
 
         if (player.level == 0)
         {
