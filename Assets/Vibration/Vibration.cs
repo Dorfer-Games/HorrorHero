@@ -46,9 +46,9 @@ public static class Vibration
 #endif
 
     private static bool initialized = false;
-    public static void Init ()
+    public static void Init()
     {
-        if ( initialized ) return;
+        if (initialized) return;
 
 #if UNITY_ANDROID
 
@@ -72,9 +72,10 @@ public static class Vibration
     ///<summary>
     /// Tiny pop vibration
     ///</summary>
-    public static void VibratePop ()
+    public static void VibratePop()
     {
-        if ( Application.isMobilePlatform ) {
+        if (Application.isMobilePlatform)
+        {
 #if UNITY_IOS
         _VibratePop ();
 #elif UNITY_ANDROID
@@ -85,9 +86,10 @@ public static class Vibration
     ///<summary>
     /// Small peek vibration
     ///</summary>
-    public static void VibratePeek ()
+    public static void VibratePeek()
     {
-        if ( Application.isMobilePlatform ) {
+        if (Application.isMobilePlatform)
+        {
 #if UNITY_IOS
         _VibratePeek ();
 #elif UNITY_ANDROID
@@ -98,9 +100,10 @@ public static class Vibration
     ///<summary>
     /// 3 small vibrations
     ///</summary>
-    public static void VibrateNope ()
+    public static void VibrateNope()
     {
-        if ( Application.isMobilePlatform ) {
+        if (Application.isMobilePlatform)
+        {
 #if UNITY_IOS
         _VibrateNope ();
 #elif UNITY_ANDROID
@@ -115,10 +118,11 @@ public static class Vibration
     /// Only on Android
     /// https://developer.android.com/reference/android/os/Vibrator.html#vibrate(long)
     ///</summary>
-    public static void Vibrate ( long milliseconds )
+    public static void Vibrate(long milliseconds)
     {
 
-        if ( Application.isMobilePlatform ) {
+        if (Application.isMobilePlatform)
+        {
 #if !UNITY_WEBGL
 #if UNITY_ANDROID
 
@@ -142,9 +146,10 @@ public static class Vibration
     /// Only on Android
     /// https://proandroiddev.com/using-vibrate-in-android-b0e3ef5d5e07
     ///</summary>
-    public static void Vibrate ( long[] pattern, int repeat )
+    public static void Vibrate(long[] pattern, int repeat)
     {
-        if ( Application.isMobilePlatform ) {
+        if (Application.isMobilePlatform)
+        {
 #if UNITY_ANDROID
 
             if ( AndroidVersion >= 26 ) {
@@ -157,8 +162,6 @@ public static class Vibration
             }
 #elif UNITY_IOS
         Handheld.Vibrate();
-#else
-        Handheld.Vibrate ();
 #endif
         }
     }
@@ -166,18 +169,20 @@ public static class Vibration
     ///<summary>
     ///Only on Android
     ///</summary>
-    public static void Cancel ()
+    public static void Cancel()
     {
-        if ( Application.isMobilePlatform ) {
+        if (Application.isMobilePlatform)
+        {
 #if UNITY_ANDROID
             vibrator.Call ( "cancel" );
 #endif
         }
     }
 
-    public static bool HasVibrator ()
+    public static bool HasVibrator()
     {
-        if ( Application.isMobilePlatform ) {
+        if (Application.isMobilePlatform)
+        {
 
 #if UNITY_ANDROID
 
@@ -193,28 +198,33 @@ public static class Vibration
 #elif UNITY_IOS
         return _HasVibrator ();
 #else
-        return false;
+            return false;
 #endif
-        } else {
+        }
+        else
+        {
             return false;
         }
     }
 
 
-    public static void Vibrate ()
+    public static void Vibrate()
     {
-        if ( Application.isMobilePlatform ) {
-            Handheld.Vibrate ();
-        }
+#if UNITY_ANDROID || UNITY_IOS
+        Handheld.Vibrate ();
+#endif
     }
 
-    public static int AndroidVersion {
-        get {
+    public static int AndroidVersion
+    {
+        get
+        {
             int iVersionNumber = 0;
-            if ( Application.platform == RuntimePlatform.Android ) {
+            if (Application.platform == RuntimePlatform.Android)
+            {
                 string androidVersion = SystemInfo.operatingSystem;
-                int sdkPos = androidVersion.IndexOf ( "API-" );
-                iVersionNumber = int.Parse ( androidVersion.Substring ( sdkPos + 4, 2 ).ToString () );
+                int sdkPos = androidVersion.IndexOf("API-");
+                iVersionNumber = int.Parse(androidVersion.Substring(sdkPos + 4, 2).ToString());
             }
             return iVersionNumber;
         }
